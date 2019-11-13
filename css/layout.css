@@ -7,7 +7,18 @@
     display: inline-block;
     width: 1200px;
     margin: 0 calc(50% - 600px);
-    background-color: grey;
+    /* background-color: grey; */
+}
+.services-container {
+    background-color: var(--yellow);
+    
+}
+.services-container> h2 {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
 }
 @media (max-width: 1300px) {
     .container > .row {
