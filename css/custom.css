@@ -75,6 +75,15 @@
 
 /************************************************************/
 
+.head-container {
+    display: inline-block;
+    text-align: left;
+}
+.nav-bar {
+    display: flex;
+    align-items: center;
+}
+
 /************************************************************/
 /* ABOUT */
 
