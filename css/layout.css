@@ -4,10 +4,10 @@
     width: 100%;
 }
 .container> .row, .head-container {
-    display: inline-block;
-    width: 1200px;
-    margin: 0 calc(50% - 600px);
-    /* background-color: grey; */
+    display: inline-block;	    display: inline-block;
+    width: 1200px;	    width: 1200px;
+    margin: 0 calc(50% - 600px);	    
+    
 }
 .services-container {
     background-color: var(--yellow);
