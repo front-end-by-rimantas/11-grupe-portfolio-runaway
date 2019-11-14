@@ -24,30 +24,36 @@
 .head-container {
     display: inline-block;
     width: 100%;
-    float: left;
+    /* float: left; */
     /* font-size: 40px; */
     line-height: 40px;
 }
 @media (max-width: 1300px) {
-    .container > .row, .head-container, .service {
+    .service, .head-container, .container > .row {
         width: 1000px;
         margin: 0 calc(50% - 500px);
     }
 }
 @media (max-width: 1100px) {
-    .container > .row, .head-container, .service{
+    .service, .head-container, .container > .row{
         width: 800px;
         margin: 0 calc(50% - 400px);
     }
 }
 @media (max-width: 900px) {
-    .container > .row, .head-container, .service{
+    .service, .head-container, .container > .row{
         width: 600px;
         margin: 0 calc(50% - 300px);
     }
 }
 @media (max-width: 700px) {
-    .container > .row, .head-container, .service{
+    .service, .head-container, .container > .row{
+        width: 400px;
+        margin: 0 calc(50% - 200px);
+    }
+}
+@media (max-width: 500px) {
+    .service, .head-container, .container > .row{
         width: 100%;
         margin: 0;
     }
