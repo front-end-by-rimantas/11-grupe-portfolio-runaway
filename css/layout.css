@@ -29,25 +29,25 @@
     line-height: 40px;
 }
 @media (max-width: 1300px) {
-    .container > .row, .head-container {
+    .container > .row, .head-container, .service {
         width: 1000px;
         margin: 0 calc(50% - 500px);
     }
 }
 @media (max-width: 1100px) {
-    .container > .row, .head-container{
+    .container > .row, .head-container, .service{
         width: 800px;
         margin: 0 calc(50% - 400px);
     }
 }
 @media (max-width: 900px) {
-    .container > .row, .head-container {
+    .container > .row, .head-container, .service{
         width: 600px;
         margin: 0 calc(50% - 300px);
     }
 }
 @media (max-width: 700px) {
-    .container > .row, .head-container {
+    .container > .row, .head-container, .service{
         width: 100%;
         margin: 0;
     }
