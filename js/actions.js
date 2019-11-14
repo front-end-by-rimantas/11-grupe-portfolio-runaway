@@ -17,7 +17,7 @@
 // job history
 
 // services
-renderServices( services);
+renderServices(service);
 
 // testimonials
 
