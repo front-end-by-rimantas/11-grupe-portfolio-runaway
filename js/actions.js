@@ -1,6 +1,7 @@
 "use strict";
 
 // header
+renderNavmeniu(navmeniu);
 
 // hero
 
