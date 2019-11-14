@@ -3,11 +3,30 @@
     display: inline-block;
     width: 100%;
 }
-.container> .row {
+.container> .row, .head-container {
+    display: inline-block;	    display: inline-block;
+    width: 1200px;	    width: 1200px;
+    margin: 0 calc(50% - 600px);	    
+    
+}
+.services-container {
+    background-color: var(--yellow);
+    
+}
+.services-container> h2 {
     display: inline-block;
-    width: 1200px;
-    margin: 0 calc(50% - 600px);
-    background-color: grey;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.head-container {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    line-height: 40px;
 }
 @media (max-width: 1300px) {
     .container > .row {

@@ -23,15 +23,15 @@ function renderServices( serviceList) {
     for (let i=0; i<serviceList.length; i++) {
         const service = serviceList[i];
         HTML += `<div class="service">
-                    <i class=" fa fa - $(service.icon}"></i>
-                    <h2> $(service.title}</h2>
-                    <p>$(service.description}</p>
+                    <i class=" fa fa-${service.icon}"></i>
+                    <h3> ${service.title}</h3>
+                    <p>${service.description}</p>
                 </div>`;
     }
-    console.log(HTML);
+    // console.log(HTML);
     
 
-    // return document.querySelector('#services'),innerHTML = HTML;
+    return document.querySelector('#services').innerHTML = HTML;
 }
 // testimonials
 
