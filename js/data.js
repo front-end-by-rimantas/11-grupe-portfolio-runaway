@@ -2,6 +2,33 @@
 
 // header
 
+const navmeniu = [
+    {
+        title: 'HOME'
+    },
+    {
+        title: 'ABOUT'
+    },
+    {
+        title: 'SKILL'
+    },
+    {
+        title: 'SERVICES'
+    },
+    {
+        title: 'PORTFOLIO'
+    },
+    {
+        title: 'TESTIMONIAL'
+    },
+    {
+        title: 'BLOG'
+    },
+    {
+        title: 'CONTACT'
+    }
+];
+
 // hero
 
 // clients

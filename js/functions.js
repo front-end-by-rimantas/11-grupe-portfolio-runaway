@@ -1,7 +1,21 @@
 "use strict";
 
 // header
+function renderNavmeniu( navmeniuList) {
+    let HTML = '';
 
+    for (let i=0; i<navmeniuList.length; i++) {
+        const navmeniu = navmeniuList[i];
+        HTML += `<div class="navmeniu">
+                 <a href="#" class="navlink">
+                ${navmeniu.title}
+        </a>
+</div>`;
+    }
+    // console.log(HTML);
+    return document.querySelector('#navbar').innerHTML = HTML;
+    
+}
 // hero
 
 // clients
