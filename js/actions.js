@@ -1,6 +1,7 @@
 "use strict";
 
 // header
+renderNavmeniu(navmeniu);
 
 // hero
 
@@ -17,7 +18,7 @@
 // job history
 
 // services
-renderServices( services);
+renderServices(service);
 
 // testimonials
 
