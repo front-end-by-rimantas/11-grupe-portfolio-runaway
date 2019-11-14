@@ -6,6 +6,122 @@
 /************************************************************/
 /* LAYOUT */
 
+.header {
+    display: inline-block;
+    width: 100%;
+    background-color: var( --white);
+
+}
+.hero-container {
+    display: inline-block;
+    width: 100%;
+    background-color: var( --light);
+
+}
+.conttop {
+    display: inline-block;
+    width: 100%;
+}
+    .conttop  h2 {
+        display: inline-block;
+        width: 50%;
+        font-size: 32px;
+        line-height: 44px;
+        padding: 0px 0px 8px;
+
+    }
+    .conttop  p {
+        display: inline-block;
+        width: 50%;
+        font-size: 16px;
+        line-height: 28px;
+        padding: 0px 0px 60px;
+    }
+    
+
+.about-container {
+    display: inline-block;
+    width: 100%;
+    background-color: var( --white);
+    padding: 80px 0px;
+    text-align: center;
+}
+
+.column-left {
+    position: relative;
+    width: 100%;
+}
+
+.column-left > p{ 
+    display: inline-block;
+    width: 530px;
+    text-align: center;
+}
+
+.personal-info {
+    display: inline-block;
+    width: 530px;
+    text-align: center;
+}
+
+.skill-container {
+    display: inline-block;
+    width: 100%;
+    background-color: var( --light);
+    padding: 80px 0px;
+    text-align: center;
+
+}
+
+.services-container {
+    display: inline-block;
+    width: 100%;
+    background-color: var( --white);
+    padding: 80px 0px;
+    text-align: center;
+}
+
+.portfolio-container {
+    display: inline-block;
+    width: 100%;
+    background-color: var( --light);
+    padding: 80px 0px;
+    text-align: center;
+    
+}
+
+.testimonial-container {
+    display: inline-block;
+    width: 100%;
+    background-color: var( --white);
+    padding: 80px 0px;
+    text-align: center;
+    
+}
+.blog-container {
+    display: inline-block;
+    width: 100%;
+    background-color: var( --light);
+    padding: 80px 0px;
+    text-align: center;
+    
+}
+.contact-container {
+    display: inline-block;
+    width: 100%;
+    background-color: var( --white);
+    padding: 80px 0px;
+    text-align: center;
+    
+}
+.footer-container {
+    display: inline-block;
+    width: 100%;
+    background-color: var( --light);
+    text-align: center;
+    
+}
+
 /************************************************************/
 
 /************************************************************/
@@ -13,13 +129,22 @@
 
 /************************************************************/
 
+.head-container {
+    display: inline-block;
+    text-align: left;
+}
+.nav-bar {
+    display: flex;
+    align-items: center;
+}
+
 /************************************************************/
-/* HERO */
+/* ABOUT */
 
 /************************************************************/
 
 /************************************************************/
-/* CLIENTS */
+/* SKILL */
 
 /************************************************************/
 
@@ -39,27 +164,53 @@
 /************************************************************/
 
 /************************************************************/
-/* LATEST WORK */
-
-/************************************************************/
-
-/************************************************************/
-/* JOB HISTORY */
-
-/************************************************************/
-
-/************************************************************/
 /* SERVICES */
 
 /************************************************************/
+.service {
+    display: inline-block;
+    width: calc(100% / 3);
+    float: left;
+    padding: 20px;
+    text-align: center;
+}
+    .service > i {
+        display: inline-block;
+        font-size: 50px;
+        line-height: 50px;
+        color: var(--gray-dark);
+    }
+    .service > h3 {
+        display: inline-block;
+        width: 100%;
+        margin: 10px 0;
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .service > p {
+        display: inline-block;
+        width: 100%;
+        font-size: 15px;
+        line-height: 20px;
+    }
 
 /************************************************************/
-/* TESTIMONIALS */
+/* PORTFOLIO */
 
 /************************************************************/
 
 /************************************************************/
-/* CONTACT ME */
+/* TESTIMONIAL */
+
+/************************************************************/
+
+/************************************************************/
+/* BLOG */
+
+/************************************************************/
+
+/************************************************************/
+/* CONTACT */
 
 /************************************************************/
 
