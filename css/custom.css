@@ -24,7 +24,7 @@
 }
 span {	
     display: inline-block;	
-    margin: 0px auto;
+    margin: 0px 200px;
     text-align: center;	
     color: #ffb32f;	
 
@@ -43,7 +43,6 @@ span {
             text-align: center;
             padding: 0px 50px;
             color: #ffb32f;
-            margin: 0 calc(50% - 84px);
             position: relative;
             
         }
@@ -70,12 +69,12 @@ span {
             }
     .conttop  p {
         display: inline-block;
-        width: 50%;
+        width: 60%;
         font-size: 16px;
         line-height: 28px;
         padding: 0px 0px 60px;
+        
     }
-    
 
 .about-container {
     display: inline-block;
@@ -88,18 +87,16 @@ span {
 .column-left {
     position: relative;
     width: 100%;
-}
 
-.column-left > p{ 
-    display: inline-block;
-    width: 530px;
-    text-align: center;
 }
-
 .personal-info {
     display: inline-block;
-    width: 530px;
-    text-align: center;
+    text-align: left;
+    width: 100%;
+    font-size: 18px;
+    margin-left: 1calc(50% - 25px);
+    padding: 0px;
+    
 }
 
 .skill-container {
@@ -194,10 +191,6 @@ text-align: center;
 
 /************************************************************/
 
-/************************************************************/
-/* ABOUT ME */
-
-/************************************************************/
 
 /************************************************************/
 /* NUMBERS */
