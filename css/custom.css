@@ -24,7 +24,7 @@
 }
 span {	
     display: inline-block;	
-    width: 100%;	
+    margin: 0px 200px;
     text-align: center;	
     color: #ffb32f;	
 
@@ -36,16 +36,37 @@ span {
         line-height: 44px;
         padding: 0px 0px 8px;
     }
-        .conttop h2 span {
+        .conttop span {
             display: inline-block;
-            width: 100%;
             font-size: 18px;
             line-height: 40px;
             text-align: center;
             padding: 0px 50px;
             color: #ffb32f;
+            position: relative;
             
         }
+            .conttop span::before{
+                content: '';
+                display: inline-block;
+                position: absolute;
+                width: 25px;
+                height: 2px;
+                top: 50%;
+                right: 0;
+                background-color: #ffb32f;
+
+            }
+            .conttop span::after {
+                content: '';
+                display: inline-block;
+                width: 25px;
+                height: 2px;
+                top: 50%;
+                left: 0;
+                background-color: #ffb32f;
+                position: absolute;
+            }
     .conttop  p {
         display: inline-block;
         width: 50%;
