@@ -27,7 +27,7 @@ span {
     margin: 0px 200px;
     text-align: center;	
     color: #ffb32f;	
-
+    margin: 0 calc(50% - 84px);
 }
     .conttop  h2 {
         display: inline-block;
@@ -206,7 +206,7 @@ text-align: center;
     background-color: antiquewhite;
     
 } */
-#data {
+.counter {
     display: inline-block;
     width: 100%;
     text-align: center;
