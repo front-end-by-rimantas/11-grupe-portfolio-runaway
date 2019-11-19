@@ -206,15 +206,39 @@ text-align: center;
     background-color: antiquewhite;
     
 } */
-
-.achievements {
+#data {
     display: inline-block;
     width: 100%;
-    background-color: aquamarine;
-    padding: 40px 0;
-    
+    text-align: center;
+    background-color: black;
 }
+.achievements {
+    display: inline-block;
+    padding: 60px;
+   
 
+
+}
+    .achievements > i {
+        display: inline-block;
+        width: 100%;
+        color: var( --white);
+        font-size: 44px;
+    }
+    .achievements > .number {
+        display: inline-block;
+        width: 100%;
+        color: var( --warning);
+        font-size: 22px;
+        padding: 20px 0;
+    }
+    .achievements > .title {
+        display: inline-block;
+        width: 100%;
+        color: var( --white);
+        font-size: 24px;
+
+    }
 
 /************************************************************/
 
