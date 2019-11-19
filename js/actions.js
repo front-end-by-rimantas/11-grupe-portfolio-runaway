@@ -10,7 +10,7 @@ renderNavmeniu(navmeniu);
 // about me
 
 // numbers
-
+renderData( data );
 // skills
 
 // latest work

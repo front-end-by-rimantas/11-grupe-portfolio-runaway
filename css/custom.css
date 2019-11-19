@@ -201,12 +201,15 @@ text-align: center;
 /************************************************************/
 /* NUMBERS */
 
-.counter{
+
+.achievements {
     display: inline-block;
     width: 100%;
-    background-color: antiquewhite;
+    background-color: aquamarine;
+    padding: 40px 0;
     
 }
+
 /************************************************************/
 
 /************************************************************/

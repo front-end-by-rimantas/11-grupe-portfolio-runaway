@@ -37,6 +37,24 @@ const navmeniu = [
 
 // numbers
 
+const data =[
+    {
+        icon: 'graduation-cap',
+        number: 7,
+        title: 'Years of Experience'
+    },
+    {
+        icon: 'trophy',
+        number: 145,
+        title: 'Porjects Done'
+    },
+    {
+        icon: 'smile-o',
+        number: 137,
+        title: 'Happy Clients'
+    }
+]
+
 // skills
 
 // latest work
