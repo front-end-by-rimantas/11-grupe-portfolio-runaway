@@ -41,6 +41,7 @@ function renderData( numberList ) {
             <div class="number">${item.number}</div>
             <h4 class="title">${item.title}</h4>
         </div>`
+
     }
 
     return document.querySelector('#data').innerHTML = HTML;
