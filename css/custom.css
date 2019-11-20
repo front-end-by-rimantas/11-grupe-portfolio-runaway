@@ -147,7 +147,7 @@ span {
     float: left;
     text-align: left;
     width: 50%;
-    margin-left: 1calc(50% - 25px);
+    /* margin-left: 1 calc(50% - 25px); */
     padding: 0px;
     }
 
@@ -163,7 +163,7 @@ ul {
         /* display: inline-block; */
         float: left;
          padding: 30 px 0 px 10px 0px;
-         margin-bottom: 30px;  
+         /* margin-bottom: 30px;   */
          position: relative;
          text-align: left;
 }
@@ -191,18 +191,18 @@ ul {
         color: beige; */
     .column1{
         float: left;
-         margin-bottom: 30px;  
+         /* margin-bottom: 30px;   */
          position: relative;
          text-align: left; 
     }
 
-    .column2{
+    /* .column2{
         float: left;
          padding: 10px 0px 10px 20px;
          margin-bottom: 30px;  
          position: sticky;
          text-align: left; 
-    }
+    } */
 
     .video {
         display: inline-block;
@@ -309,7 +309,7 @@ ul {
 /************************************************************/
 .service {
     display: inline-block;
-    width: calc(100% /3);
+    /* width: calc(100% /3); */
     float: right;
     padding: 20px;
     text-align: center;
