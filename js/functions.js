@@ -38,7 +38,7 @@ function renderData( numberList ) {
 
         HTML += `<div class="achievements">
             <i class="fa fa-${item.icon}"></i>
-            <div class="number">${item.number}</div>
+            <div class="number">${item.number}<span>+</span></div>
             <h4 class="title">${item.title}</h4>
         </div>`
     }

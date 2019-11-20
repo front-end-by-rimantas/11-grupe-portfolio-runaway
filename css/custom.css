@@ -212,6 +212,10 @@ text-align: center;
     text-align: center;
     background-color: black;
 }
+    /* .counter > span {
+        display: inline-block;
+        background-color: var( --warning);
+    } */
 .achievements {
     display: inline-block;
     padding: 60px;
@@ -228,9 +232,15 @@ text-align: center;
     .achievements > .number {
         display: inline-block;
         width: 100%;
-        color: var( --warning);
-        font-size: 22px;
+        font-size: 32px;
+        line-height: 44px;
+        font-weight: 700;
         padding: 20px 0;
+        color: var( --warning);
+    }
+    .achievements > .number > span {
+        display: inline-block;
+        margin: 0;
     }
     .achievements > .title {
         display: inline-block;
