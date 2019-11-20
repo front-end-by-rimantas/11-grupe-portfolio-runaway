@@ -27,6 +27,7 @@ span {
     margin: 0px 200px;
     text-align: center;	
     color: #ffb32f;	
+    margin: 0 calc(50% - 84px);
 
 }
     .conttop  h2 {
@@ -173,8 +174,8 @@ ul {
     width: 100%;
     background-color: var( --light);
     padding: 80px 0px;
-    text-align: center;
-    margin: 150px 0px 150px 0px; 
+    /* text-align: center; */
+    /* margin: 150px 0px 150px 0px;  */
 }
 
 .services-container {
@@ -274,7 +275,7 @@ text-align: center;
 
 .achievements {
     display: inline-block;
-    padding: 60px;  
+    padding: 50px;  
 }
 
     .achievements > i {
