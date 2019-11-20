@@ -309,7 +309,7 @@ ul {
 /************************************************************/
 .service {
     display: inline-block;
-    /* width: calc(100% /3); */
+    width: calc((100% - 120px)/3);
     float: right;
     padding: 20px;
     text-align: center;
@@ -318,7 +318,7 @@ ul {
     .service > h3 {
         display: inline-block;
         width: 100%;
-        margin: 10px 0;
+        margin: 10px 0 0 0 ;
         font-size: 20px;
         line-height: 20px;
     }
@@ -326,7 +326,12 @@ ul {
         display: inline-block;
         font-size: 50px;
         line-height: 50px;
-        width: 100%;
+        padding: 18px;
+        margin: 18px 0;
+        border-radius: 3px;
+        width: 86px;
+        background-color: var(--warning);
+        color: #fff;
     }
     
     .service > p {
@@ -335,7 +340,10 @@ ul {
         font-size: 15px;
         line-height: 20px;
     }
-   
+    /* .service > i > .fa-shopping-cart{
+        padding: 15px 0 0 15px;
+    }
+    */
 
 /************************************************************/
 /* PORTFOLIO */
