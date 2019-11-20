@@ -194,35 +194,20 @@ text-align: center;
 /************************************************************/
 
 /************************************************************/
-/* ABOUT ME */
-
-/************************************************************/
-
-/************************************************************/
 /* NUMBERS */
-/* .counter{
-    display: inline-block;
-    width: 100%;
-    background-color: antiquewhite;
-    
-} */
+
 .counter {
     display: inline-block;
     width: 100%;
     text-align: center;
     background-color: black;
 }
-    /* .counter > span {
-        display: inline-block;
-        background-color: var( --warning);
-    } */
+
 .achievements {
     display: inline-block;
-    padding: 60px;
-   
-
-
+    padding: 60px;  
 }
+
     .achievements > i {
         display: inline-block;
         width: 100%;
@@ -249,11 +234,6 @@ text-align: center;
         font-size: 24px;
 
     }
-
-/************************************************************/
-
-/************************************************************/
-/* SKILLS */
 
 /************************************************************/
 
