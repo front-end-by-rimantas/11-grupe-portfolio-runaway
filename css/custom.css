@@ -159,65 +159,7 @@ span {
 
     }
 
-ul {
-        /* display: inline-block; */
-        float: left;
-         padding: 30 px 0 px 10px 0px;
-         /* margin-bottom: 30px;   */
-         position: relative;
-         text-align: left;
-}
-
-    ul > li{
-        font-size: 22px;
-        padding: 30 px 0 px 10px 0px;
-        color: grey;
-        font-size: 17px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .personal-info-underline {
-            /* display: inline-block; */
-            width: 100%;
-            float: left;
-            height: 1px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            background-color: #ccc;
-            border-radius: 1px;
-            position: relative;
-    }
-    /* .personal-info-underline > lighter-text{
-        color: beige; */
-    .column1{
-        float: left;
-         /* margin-bottom: 30px;   */
-         position: relative;
-         text-align: left; 
-    }
-
-    /* .column2{
-        float: left;
-         padding: 10px 0px 10px 20px;
-         margin-bottom: 30px;  
-         position: sticky;
-         text-align: left; 
-    } */
-
-    .video {
-        display: inline-block;
-        width: 420px;
-        height: 420px;
-        margin: auto;   
-        width: 40%;
-        height: auto;     
-        /* object-fit: cover; */
-        }
-
-       .video > img{
-        width: 100%;
-        height: auto;
-       } 
+ 
     
 .services-container, .about-container, .testimonial-container, .contact-container {
     display: inline-block;
@@ -252,7 +194,65 @@ ul {
 /* ABOUT */
 
 /************************************************************/
+ul.about {
+    /* display: inline-block; */
+    float: left;
+     padding: 30 px 0 px 10px 0px;
+     /* margin-bottom: 30px;   */
+     position: relative;
+     text-align: left;
+}
 
+ul.about > li{
+    font-size: 22px;
+    padding: 30 px 0 px 10px 0px;
+    color: grey;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.personal-info-underline {
+        /* display: inline-block; */
+        width: 100%;
+        float: left;
+        height: 1px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: #ccc;
+        border-radius: 1px;
+        position: relative;
+}
+/* .personal-info-underline > lighter-text{
+    color: beige; */
+.column1{
+    float: left;
+     /* margin-bottom: 30px;   */
+     position: relative;
+     text-align: left; 
+}
+
+/* .column2{
+    float: left;
+     padding: 10px 0px 10px 20px;
+     margin-bottom: 30px;  
+     position: sticky;
+     text-align: left; 
+} */
+
+.video {
+    display: inline-block;
+    width: 420px;
+    height: 420px;
+    margin: auto;   
+    width: 40%;
+    height: auto;     
+    /* object-fit: cover; */
+    }
+
+   .video > img{
+    width: 100%;
+    height: auto;
+   }
 /************************************************************/
 /* SKILL */
 
@@ -349,7 +349,12 @@ ul {
 /* PORTFOLIO */
 
 /************************************************************/
-
+.f_items{
+    display: inline-block;
+    margin: 0 15px;
+    text-transform: uppercase;
+    font-size:16px;
+}
 /************************************************************/
 /* TESTIMONIAL */
 
