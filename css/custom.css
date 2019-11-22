@@ -191,19 +191,27 @@ span {
 /* ********************************************************* */
 /* HERO  */
 /* ********************************************************* */
-.bg_image{
+.bg_image::before{
+        background-color: rgba(0, 0,0, 0.3);
+
+    }
+    .bg_image{
     display: inline-block;
+    
     background-image: url(/img/slider/03.jpg);
     background-size: cover;
     /* padding: 0; */
 }
+    
 .hero-container {
     height: 100vh;
     padding: 0;
+    
 }
 .row>.hero_content{
     display: inline-block;
     margin-top: 25%;
+    color: #fff;
   
 }
 

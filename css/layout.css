@@ -37,7 +37,7 @@
     .container > .row {
         display: inline-block;
         width: 1200px;
-        /* margin: 0 calc(50% - 600px); */
+        margin: 0 calc(50% - 600px);
     }
     .header > .row {
         display: inline-block;
