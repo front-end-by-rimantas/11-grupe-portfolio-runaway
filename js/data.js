@@ -64,7 +64,7 @@ const data =[
 // services
 const service = [
     {
-        icon: 'pencil-square-o',
+        icon: 'magic',
         title: 'WEB DESIGN',
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor magnam similique vitae cum atque? Ex necessitatibus, nam officiis neque maxime iste officia!"
     },
@@ -89,7 +89,7 @@ const service = [
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor magnam similique vitae cum atque? Ex necessitatibus, nam officiis neque maxime iste officia!"
     },
     {
-        icon: 'shopping-basket',
+        icon: 'shopping-cart',
         title: 'OPENCART',
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor magnam similique vitae cum atque? Ex necessitatibus, nam officiis neque maxime iste officia!"
     }
