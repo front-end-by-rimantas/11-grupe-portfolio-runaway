@@ -233,7 +233,7 @@ ul.about > li{
     font-size: 20px;
     line-height: 40px;
     color: rgb(34, 32, 32);
-    text-align: left;
+    /* text-align: left; */
     font-family: tahoma, Haettenschweiler, 'Arial Bold', sans-serif;
     margin-bottom: 8px;
     font-weight: bold;
@@ -436,21 +436,25 @@ ul.about > li{
 
             
         }
-            .contacts > socials > a {
-                width: 40px;
-                padding: 10px;
-                color: #fff;
-                text-decoration: none;
-                font-size: 20px;
-                line-height: 20px;
-                padding-right: 10px;
-            }
-                .contacts > .socials > a:hover {
+            
+                .contacts > .socials > a *> i:hover  {
                     background-color: #fff;
                     color: #ffb32f;
-                    border-radius: 50%;
+                    /* border-radius: 50%; */
+                    
                 }
-        
+        .socials> a > .soc{
+            padding:0 20px 0 0;
+            color: black;
+            font-size: 17px;
+            text-decoration: none;
+
+        }
+        .socials> a {
+       
+            text-decoration: none;
+
+        }
     
     /* CONTACT END */
 /************************************************************/
