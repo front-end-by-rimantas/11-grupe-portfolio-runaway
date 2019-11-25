@@ -84,82 +84,15 @@ span {
     padding: 80px 0px;
     text-align: center;
 }
-.service_h span {	
-    display: inline-block;	
-    margin: 0px 200px;
-    text-align: center;	
-    color: #ffb32f;	
-    margin: 0 calc(50% - 84px);
-}
-    .service_h  h2 {
-        display: inline-block;
-        width: 50%;
-        font-size: 32px;
-        line-height: 44px;
-        padding: 0px 0px 8px;
-    }
-    .service_h span {
-            display: inline-block;
-            font-size: 18px;
-            line-height: 40px;
-            text-align: center;
-            padding: 0px 50px;
-            color: #ffb32f;
-            position: relative;
-            
-        }
-        .service_h span::before{
-                content: '';
-                display: inline-block;
-                position: absolute;
-                width: 25px;
-                height: 2px;
-                top: 50%;
-                right: 0;
-                background-color: #ffb32f;
+ /* PLEASE, JEI TAI SERVICE DALIS PADEDAM I SERVICE */
 
-            }
-            .service_h span::after {
-                content: '';
-                display: inline-block;
-                width: 25px;
-                height: 2px;
-                top: 50%;
-                left: 0;
-                background-color: #ffb32f;
-                position: absolute;
-            }
-            .service_h  p {
-        display: inline-block;
-        width: 50%;
-        font-size: 16px;
-        line-height: 28px;
-        padding: 0px 0px 60px;
-    }
+    /* PLEASE, JEI TAI SERVICE DALIS PADEDAM I SERVICE */
 
         .column-left {
             position: relative;
             width: 100%;
+        }
 
-}
-.personal-info {
-    display: inline-block;
-    float: left;
-    text-align: left;
-    width: 50%;
-    /* margin-left: 1 calc(50% - 25px); */
-    padding: 0px;
-    }
-
-    p{
-        font-size: 18px;
-        font-family: Arial, Helvetica, sans-serif;
-        line-height: 1.6;
-        color: grey;
-
-    }
-
- 
     
 .services-container, .about-container, .testimonial-container, .contact-container {
     display: inline-block;
@@ -168,7 +101,7 @@ span {
     padding: 80px 0px;
     text-align: center;
 }
-.portfolio-container, .skill-container, .blog-container, .footer-container {
+.portfolio-container, .skill-container, .blog-container, .contacts-container {
     display: inline-block;
     width: 100%;
     background-color: var( --light);
@@ -219,6 +152,24 @@ span {
 /* ABOUT */
 
 /************************************************************/
+/* PERSONAL INFO START */
+
+.personal-info {
+    display: inline-block;
+    float: left;
+    text-align: left;
+    width: 50%;
+    /* margin-left: 1 calc(50% - 25px); */
+    padding: 0px;
+    }
+
+    p{
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.6;
+        color: grey;
+    }
+
 ul.about {
     /* display: inline-block; */
     float: left;
@@ -255,14 +206,9 @@ ul.about > li{
      position: relative;
      text-align: left; 
 }
+  /* PERSONAL INFO END */
 
-/* .column2{
-    float: left;
-     padding: 10px 0px 10px 20px;
-     margin-bottom: 30px;  
-     position: sticky;
-     text-align: left; 
-} */
+/* ABOUT SECTION VIDEO START */
 
 .video {
     display: inline-block;
@@ -278,15 +224,37 @@ ul.about > li{
     width: 100%;
     height: auto;
    }
+   /* ABOUT SECTION VIDEO END */
 /************************************************************/
-/* SKILL */
+/* SKILL START */
+
+.title {
+    margin-bottom: 0px;
+    font-size: 20px;
+    line-height: 40px;
+    color: rgb(34, 32, 32);
+    /* text-align: left; */
+    font-family: tahoma, Haettenschweiler, 'Arial Bold', sans-serif;
+    margin-bottom: 8px;
+    font-weight: bold;
+    margin-top: -15px;
+}
+.skills {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 17px;
+    line-height: 30px;
+    color: #777;
+    text-align: left;
+
+}
+/************************************************************/
+/* SKILLS END */
+
 
 /************************************************************/
-
-
-
-/************************************************************/
-/* NUMBERS */
+/* NUMBERS START*/
 
 .counter {
     display: inline-block;
@@ -327,7 +295,7 @@ ul.about > li{
 
     }
 
-
+/* NUMBERS END */
 /************************************************************/
 /* SERVICES */
 
@@ -365,6 +333,58 @@ ul.about > li{
         font-size: 15px;
         line-height: 20px;
     }
+    .service_h span {	
+        display: inline-block;	
+        margin: 0px 200px;
+        text-align: center;	
+        color: #ffb32f;	
+        margin: 0 calc(50% - 84px);
+    }
+        .service_h  h2 {
+            display: inline-block;
+            width: 50%;
+            font-size: 32px;
+            line-height: 44px;
+            padding: 0px 0px 8px;
+        }
+        .service_h span {
+                display: inline-block;
+                font-size: 18px;
+                line-height: 40px;
+                text-align: center;
+                padding: 0px 50px;
+                color: #ffb32f;
+                position: relative;
+                
+            }
+            .service_h span::before{
+                    content: '';
+                    display: inline-block;
+                    position: absolute;
+                    width: 25px;
+                    height: 2px;
+                    top: 50%;
+                    right: 0;
+                    background-color: #ffb32f;
+    
+                }
+                .service_h span::after {
+                    content: '';
+                    display: inline-block;
+                    width: 25px;
+                    height: 2px;
+                    top: 50%;
+                    left: 0;
+                    background-color: #ffb32f;
+                    position: absolute;
+                }
+                .service_h  p {
+            display: inline-block;
+            width: 50%;
+            font-size: 16px;
+            line-height: 28px;
+            padding: 0px 0px 60px;
+        }
     /* .service > i > .fa-shopping-cart{
         padding: 15px 0 0 15px;
     }
@@ -391,11 +411,55 @@ ul.about > li{
 /************************************************************/
 
 /************************************************************/
-/* CONTACT */
+/* CONTACT START */
 
+.contacts-l > p {
+    display: inline-block;
+    width: 100%;
+    line-height: 28px;
+    font-size: 16px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    
+}
+    .contacts-l > h4{
+        font-size: 16px;
+        text-align: left;
+    }
+    .contacts-l > .socials{
+            display: inline-block;
+            width: 100%;
+            text-align: left;
+            padding-bottom: 80px;
+            padding-top: 10px;
+
+            
+        }
+            
+                .contacts > .socials > a *> i:hover  {
+                    background-color: #fff;
+                    color: #ffb32f;
+                    /* border-radius: 50%; */
+                    
+                }
+        .socials> a > .soc{
+            padding:0 20px 0 0;
+            color: black;
+            font-size: 17px;
+            text-decoration: none;
+
+        }
+        .socials> a {
+       
+            text-decoration: none;
+
+        }
+    
+    /* CONTACT END */
 /************************************************************/
 
 /************************************************************/
-/* FOOTER */
+/* con.contacts */
 
 /************************************************************/
