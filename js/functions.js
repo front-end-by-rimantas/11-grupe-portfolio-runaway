@@ -58,7 +58,7 @@ function renderServices( serviceList) {
 
     for (let i=0; i<serviceList.length; i++) {
         const service = serviceList[i];
-        HTML += `<div class="service service col-4 col-md-6 col-xs-12">
+        HTML += `<div class="service col-4 col-md-6 col-xs-12">
                     <h3> ${service.title}</h3>
                     <i class=" fa fa-${service.icon}"></i>
                     <p>${service.description}</p>

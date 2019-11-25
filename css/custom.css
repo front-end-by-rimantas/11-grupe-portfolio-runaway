@@ -85,58 +85,7 @@ span {
     text-align: center;
 }
  /* PLEASE, JEI TAI SERVICE DALIS PADEDAM I SERVICE */
-.service_h span {	
-    display: inline-block;	
-    margin: 0px 200px;
-    text-align: center;	
-    color: #ffb32f;	
-    margin: 0 calc(50% - 84px);
-}
-    .service_h  h2 {
-        display: inline-block;
-        width: 50%;
-        font-size: 32px;
-        line-height: 44px;
-        padding: 0px 0px 8px;
-    }
-    .service_h span {
-            display: inline-block;
-            font-size: 18px;
-            line-height: 40px;
-            text-align: center;
-            padding: 0px 50px;
-            color: #ffb32f;
-            position: relative;
-            
-        }
-        .service_h span::before{
-                content: '';
-                display: inline-block;
-                position: absolute;
-                width: 25px;
-                height: 2px;
-                top: 50%;
-                right: 0;
-                background-color: #ffb32f;
 
-            }
-            .service_h span::after {
-                content: '';
-                display: inline-block;
-                width: 25px;
-                height: 2px;
-                top: 50%;
-                left: 0;
-                background-color: #ffb32f;
-                position: absolute;
-            }
-            .service_h  p {
-        display: inline-block;
-        width: 50%;
-        font-size: 16px;
-        line-height: 28px;
-        padding: 0px 0px 60px;
-    }
     /* PLEASE, JEI TAI SERVICE DALIS PADEDAM I SERVICE */
 
         .column-left {
@@ -384,6 +333,58 @@ ul.about > li{
         font-size: 15px;
         line-height: 20px;
     }
+    .service_h span {	
+        display: inline-block;	
+        margin: 0px 200px;
+        text-align: center;	
+        color: #ffb32f;	
+        margin: 0 calc(50% - 84px);
+    }
+        .service_h  h2 {
+            display: inline-block;
+            width: 50%;
+            font-size: 32px;
+            line-height: 44px;
+            padding: 0px 0px 8px;
+        }
+        .service_h span {
+                display: inline-block;
+                font-size: 18px;
+                line-height: 40px;
+                text-align: center;
+                padding: 0px 50px;
+                color: #ffb32f;
+                position: relative;
+                
+            }
+            .service_h span::before{
+                    content: '';
+                    display: inline-block;
+                    position: absolute;
+                    width: 25px;
+                    height: 2px;
+                    top: 50%;
+                    right: 0;
+                    background-color: #ffb32f;
+    
+                }
+                .service_h span::after {
+                    content: '';
+                    display: inline-block;
+                    width: 25px;
+                    height: 2px;
+                    top: 50%;
+                    left: 0;
+                    background-color: #ffb32f;
+                    position: absolute;
+                }
+                .service_h  p {
+            display: inline-block;
+            width: 50%;
+            font-size: 16px;
+            line-height: 28px;
+            padding: 0px 0px 60px;
+        }
     /* .service > i > .fa-shopping-cart{
         padding: 15px 0 0 15px;
     }
