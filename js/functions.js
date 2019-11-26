@@ -74,4 +74,3 @@ function renderServices( serviceList) {
 // contact me
 
 // footer
-
