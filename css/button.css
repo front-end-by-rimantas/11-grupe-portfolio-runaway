@@ -3,12 +3,13 @@
         display: inline-block;
         min-width: 52px;
         padding: 10px 30px;
-        background-color: orange;
+        background-color: #ffb32f;
         color: #fff;
         font-size: 14px;
         font-weight: 600;
         line-height: 20px;
         border-radius: 2px;
+        border: none;
         text-decoration: none;
         cursor: pointer;
         text-transform: uppercase;

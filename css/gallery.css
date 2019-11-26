@@ -2,7 +2,7 @@
     display: inline-block;
 
 }
-    #p_img> a img{
+    #p_img>  img{
     display: inline-block;
     width:300px;
     height: auto;
@@ -15,7 +15,7 @@
         margin: 0 20px;
         text-decoration: none;
     }
-    #p_img> a {
+    #p_img> img {
         /* text-decoration: none; */
         border: none;
     }
