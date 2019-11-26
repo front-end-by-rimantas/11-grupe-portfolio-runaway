@@ -173,15 +173,16 @@ span {
 ul.about {
     /* display: inline-block; */
     float: left;
-     padding: 30 px 0 px 10px 0px;
+    margin-top: 20px;
+    padding-right: 30px;
      /* margin-bottom: 30px;   */
      position: relative;
      text-align: left;
 }
 
-ul.about > li{
+.about > li{
     font-size: 22px;
-    padding: 30 px 0 px 10px 0px;
+    margin-top: 20px;
     color: grey;
     font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
