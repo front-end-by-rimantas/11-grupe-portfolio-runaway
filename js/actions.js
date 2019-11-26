@@ -22,6 +22,9 @@ renderServices(service);
 
 // testimonials
 
+//Blog
+renderBlog(blog);
+
 // contact me
 
 // footer

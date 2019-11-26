@@ -97,6 +97,55 @@ const service = [
 
 // testimonials
 
+//Blog
+const blog = [
+    {
+        icon: 'comment',
+        photo: '01.jpg',
+        title: 'Convallis pulvinar morbi. Aenean nisi vitae metus nonummy a morbi.',
+        text: 'Dictumst integer sollicitudin venenatis ornare quam. Ligula integer luctus, blandit egestas molestie facilisi porttitor neque sodal luctus senectus lacinia euismod adipiscing element turpis dolor curae; posuere augue.',
+        name: {
+            name: 'By - Rockstar Jack',
+            face: '',
+        },
+        data: {
+            day: 20,
+            month: 'Jan',
+            year: 2019
+        }
+    },
+    {
+        icon: 'comment',
+        photo: '02.jpg',
+        title: 'Convallis pulvinar morbi. Aenean nisi vitae metus nonummy a morbi.',
+        text: 'Dictumst integer sollicitudin venenatis ornare quam. Ligula integer luctus, blandit egestas molestie facilisi porttitor neque sodal luctus senectus lacinia euismod adipiscing element turpis dolor curae; posuere augue.',
+        name: {
+            name: 'By - Rockstar Jack',
+            face: '',
+        },
+        data: {
+            day: 20,
+            month: 'Jan',
+            year: 2019
+        }
+    },
+    {
+        icon: 'comment',
+        photo: '03.jpg',
+        title: 'Convallis pulvinar morbi. Aenean nisi vitae metus nonummy a morbi.',
+        text: 'Dictumst integer sollicitudin venenatis ornare quam. Ligula integer luctus, blandit egestas molestie facilisi porttitor neque sodal luctus senectus lacinia euismod adipiscing element turpis dolor curae; posuere augue.',
+        name: {
+            name: 'By - Rockstar Jack',
+            face: '',
+        },
+        data: {
+            day: 20,
+            month: 'Jan',
+            year: 2019
+        }
+    }
+];
+
 // contact me
 
 // footer
