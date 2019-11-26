@@ -71,7 +71,23 @@ function renderServices( serviceList) {
 }
 // testimonials
 
+//Blog
+function renderBlog( blogList ) {
+    let HTML = '';
+    
+    for ( let i=0; i<blogList.length; i++ ) {
+        const blog = blogList[i];
+
+        HTML += `<div class="blogas">
+            <i class="fa fa-${blog.icon}"></i>
+            <img src="/img/blog/${blog.photo}">
+            <h4 class="title">${blog.title}</h4>
+            <h5 class="text">${blog.text}</h5
+        </div>`
+    }
+    
+    return document.querySelector('#blog').innerHTML = HTML;
+}
 // contact me
 
 // footer
-
