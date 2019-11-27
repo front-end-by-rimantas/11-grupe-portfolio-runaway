@@ -107,48 +107,30 @@ const service = [
 const blog = [
     {
         icon: 'comment',
+        count: 12,
         photo: '01.jpg',
         title: 'Convallis pulvinar morbi. Aenean nisi vitae metus nonummy a morbi.',
         text: 'Dictumst integer sollicitudin venenatis ornare quam. Ligula integer luctus, blandit egestas molestie facilisi porttitor neque sodal luctus senectus lacinia euismod adipiscing element turpis dolor curae; posuere augue.',
-        name: {
-            name: 'By - Rockstar Jack',
-            face: '',
-        },
-        data: {
-            day: 20,
-            month: 'Jan',
-            year: 2019
-        }
+        face: '02.jpg',
+        date: '20 Jan 2019'
     },
     {
         icon: 'comment',
+        count: 18,
         photo: '02.jpg',
-        title: 'Convallis pulvinar morbi. Aenean nisi vitae metus nonummy a morbi.',
+        title: 'Ornare fames imperdiet sapien. Iaculis dictum aptent commodo at iaculis.',
         text: 'Dictumst integer sollicitudin venenatis ornare quam. Ligula integer luctus, blandit egestas molestie facilisi porttitor neque sodal luctus senectus lacinia euismod adipiscing element turpis dolor curae; posuere augue.',
-        name: {
-            name: 'By - Rockstar Jack',
-            face: '',
-        },
-        data: {
-            day: 20,
-            month: 'Jan',
-            year: 2019
-        }
+        face: '02.jpg',
+        date: '18 Jan 2019'
     },
     {
         icon: 'comment',
+        count: 23,
         photo: '03.jpg',
-        title: 'Convallis pulvinar morbi. Aenean nisi vitae metus nonummy a morbi.',
+        title: 'Vulputate donec sem purus litora varius auctor augue suscipit hac.',
         text: 'Dictumst integer sollicitudin venenatis ornare quam. Ligula integer luctus, blandit egestas molestie facilisi porttitor neque sodal luctus senectus lacinia euismod adipiscing element turpis dolor curae; posuere augue.',
-        name: {
-            name: 'By - Rockstar Jack',
-            face: '',
-        },
-        data: {
-            day: 20,
-            month: 'Jan',
-            year: 2019
-        }
+        face: '02.jpg',
+        date: '17 Jan 2019'
     }
 ];
 
