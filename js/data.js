@@ -64,31 +64,37 @@ const data =[
 // services
 const service = [
     {
+        figure:'01.',
         icon: 'magic',
         title: 'WEB DESIGN',
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor magnam similique vitae cum atque? Ex necessitatibus, nam officiis neque maxime iste officia!"
     },
     {
+        figure:'02.',
         icon: 'file-code-o',
         title: 'WEB DEVELOPMENT',
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor magnam similique vitae cum atque? Ex necessitatibus, nam officiis neque maxime iste officia!"
     },
     {
+        figure:'03.',
         icon: 'wordpress',
         title: 'WORDPRESS',
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor magnam similique vitae cum atque? Ex necessitatibus, nam officiis neque maxime iste officia!"
     },
     {
+        figure:'04.',
         icon: 'paint-brush',
         title: 'GRAPHIC DESIGN',
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor magnam similique vitae cum atque? Ex necessitatibus, nam officiis neque maxime iste officia!"
     },
     {
+        figure:'05.',
         icon: 'registered',
         title: 'BRANDING',
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor magnam similique vitae cum atque? Ex necessitatibus, nam officiis neque maxime iste officia!"
     },
     {
+        figure:'06.',
         icon: 'shopping-cart',
         title: 'OPENCART',
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor magnam similique vitae cum atque? Ex necessitatibus, nam officiis neque maxime iste officia!"
