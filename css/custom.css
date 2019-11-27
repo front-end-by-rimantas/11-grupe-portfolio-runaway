@@ -85,7 +85,58 @@ span {
     text-align: center;
 }
  /* PLEASE, JEI TAI SERVICE DALIS PADEDAM I SERVICE */
+.service_h span {	
+    display: inline-block;	
+    margin: 0px 200px;
+    text-align: center;	
+    color: #ffb32f;	
+    margin: 0 calc(50% - 84px);
+}
+    .service_h  h2 {
+        display: inline-block;
+        width: 50%;
+        font-size: 32px;
+        line-height: 44px;
+        padding: 0px 0px 8px;
+    }
+    .service_h span {
+            display: inline-block;
+            font-size: 18px;
+            line-height: 40px;
+            text-align: center;
+            padding: 0px 50px;
+            color: #ffb32f;
+            position: relative;
+            
+        }
+        .service_h span::before{
+                content: '';
+                display: inline-block;
+                position: absolute;
+                width: 25px;
+                height: 2px;
+                top: 50%;
+                right: 0;
+                background-color: #ffb32f;
 
+            }
+            .service_h span::after {
+                content: '';
+                display: inline-block;
+                width: 25px;
+                height: 2px;
+                top: 50%;
+                left: 0;
+                background-color: #ffb32f;
+                position: absolute;
+            }
+            .service_h  p {
+        display: inline-block;
+        width: 50%;
+        font-size: 16px;
+        line-height: 28px;
+        padding: 0px 0px 60px;
+    }
     /* PLEASE, JEI TAI SERVICE DALIS PADEDAM I SERVICE */
 
         .column-left {
@@ -273,7 +324,7 @@ ul.about {
     font-size: 20px;
     line-height: 40px;
     color: rgb(34, 32, 32);
-    /* text-align: left; */
+    text-align: left;
     font-family: tahoma, Haettenschweiler, 'Arial Bold', sans-serif;
     margin-bottom: 8px;
     font-weight: bold;
@@ -383,6 +434,7 @@ ul.about {
         font-size: 15px;
         line-height: 20px;
     }
+
     .service_h span {	
         display: inline-block;	
         margin: 0px 200px;
@@ -487,6 +539,7 @@ ul.about {
     text-align: left;
     margin-top: 10px;
     margin-bottom: 30px;
+    position: relative;
     
 }
     .contacts-l > h4{
@@ -499,29 +552,37 @@ ul.about {
             text-align: left;
             padding-bottom: 80px;
             padding-top: 10px;
-
-            
         }
-            
-                .contacts > .socials > a *> i:hover  {
+            .contacts > socials > a {
+                width: 40px;
+                padding: 10px;
+                color: #fff;
+                text-decoration: none;
+                font-size: 20px;
+                line-height: 20px;
+                padding-right: 10px;
+            }
+                .contacts > .socials > a:hover {
                     background-color: #fff;
                     color: #ffb32f;
-                    /* border-radius: 50%; */
-                    
+                    border-radius: 50%;
                 }
-        .socials> a > .soc{
-            padding:0 20px 0 0;
-            color: black;
-            font-size: 17px;
-            text-decoration: none;
+        
+/* .contacts-r > .form > input {
+    width: 45%;
+    float: right;
+} */
 
-        }
-        .socials> a {
-       
-            text-decoration: none;
+form input[name="name"] {
+    display: inline-block;
+    width: 45%;
+}
+form input[name="email"] {
+    float: right;
+    width: 45%;
+}
 
-        }
-    
+
     /* CONTACT END */
 /************************************************************/
 

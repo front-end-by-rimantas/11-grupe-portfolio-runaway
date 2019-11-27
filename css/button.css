@@ -1,6 +1,8 @@
 
     .btn {
         display: inline-block;
+        float: left;
+        margin-top: 20px;
         min-width: 52px;
         padding: 10px 30px;
         background-color: #ffb32f;
