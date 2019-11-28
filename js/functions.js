@@ -78,11 +78,11 @@ let HTML = '';
         const gallery = galleryList[i];
         HTML += ` <a href="../img/portfolio/${gallery.port_img}">
         <img class="col-md-3 col-lg-3" src="../img/portfolio/${gallery.src}" alt="">
-        <div class="port_overlay">
+        
                 <span>
                         <i class="fa fa-eye"></i>
                 </span>
-        </div>
+        
         </a>`
     }
     // console.log(HTML);
