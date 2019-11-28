@@ -85,10 +85,11 @@ function renderBlog( blogList ) {
             <i class="fa fa-${blog.icon}"></i>
             <span class="count">${blog.count}</span>
             <img src="/img/blog/${blog.photo}">
-            <h4 class="title">${blog.title}</h4>
-            <h5 class="text">${blog.text}</h5>
+            <h4 class="blog-title">${blog.title}</h4>
+            <p class="text">${blog.text}<p>
                 <div class="bottom">
-                <img src="/img/about/${blog.face}"<span class="admin">By - Rockstar Jack</span>
+                    <img src="/img/about/${blog.face}">
+                    <p class="admin">By - Rockstar Jack</p>
                 </div>
                 <div class="date">${blog.date}</div>
         </div>`
