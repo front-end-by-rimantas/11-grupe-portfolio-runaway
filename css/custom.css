@@ -440,9 +440,9 @@ ul.about {
     
     .service > p {
         display: inline-block;
-        width: 100%;
+        /* width: 100%; */
         font-size: 16px;
-        line-height: 20px;
+        line-height: 28px;
         padding: 30px 20px;
     }
 
@@ -576,19 +576,24 @@ ul.about {
             padding-bottom: 80px;
             padding-top: 10px;
         }
-            .contacts > socials > a {
-                width: 40px;
-                padding: 10px;
-                color: #fff;
+            .contacts-l > .socials > a {
+                /* width: 40px; */
+                /* padding: 10px; */
+                /* color: #fff; */
                 text-decoration: none;
-                font-size: 20px;
-                line-height: 20px;
-                padding-right: 10px;
+                font-size: 16px;
+                line-height: 28px;
+                margin-right: 15px;
+                /* padding-right: 10px; */
             }
-                .contacts > .socials > a:hover {
+                 .socials > a:hover >i {
                     background-color: #fff;
                     color: #ffb32f;
-                    border-radius: 50%;
+                    /* border-radius: 50%; */
+                }
+                .contacts-l > .socials > a > i{
+                    color: black;
+                    /* padding-right: 20px; */
                 }
         
 /* .contacts-r > .form > input {
