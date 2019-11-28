@@ -2,11 +2,13 @@
 /* BASIC */
 ::-webkit-scrollbar {
     width: 5px;
+   
   }
  
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: rgb(0, 0, 0);
+    
   }
 
 /************************************************************/
