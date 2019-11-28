@@ -101,6 +101,39 @@ const service = [
     }
 ];
 
+// portfolio
+const gallery = [
+    {
+        port_img: '01.jpg',
+        src: '01.jpg'
+    },
+    {
+        port_img: '02.jpg',
+        src: '02.jpg'
+    },
+    {
+        port_img: '03.jpg',
+        src: '03.jpg'
+    },
+    {
+        port_img: '04.jpg',
+        src: '04.jpg'
+    },
+    {
+        port_img: '05.jpg',
+        src: '05.jpg'
+    },
+    {
+        port_img: '06.jpg',
+        src: '06.jpg'
+    },
+
+
+]
+
+
+
+
 // testimonials
 
 //Blog
