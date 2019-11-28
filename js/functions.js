@@ -48,8 +48,6 @@ function renderData( numberList ) {
 
 // skills
 
-// latest work
-
 // job history
 
 // services
@@ -72,6 +70,33 @@ function renderServices( serviceList) {
 
     return document.querySelector('#services').innerHTML = HTML;
 }
+// portfolio
+function renderPort (galleryList){
+let HTML = '';
+
+    for (let i=0; i<galleryList.length; i++) {
+        const gallery = galleryList[i];
+        HTML += ` <a href="../img/portfolio/${gallery.port_img}">
+        <img class="col-md-3 col-lg-3" src="../img/portfolio/${gallery.src}" alt="">
+        <div class="port_overlay">
+                <span>
+                        <i class="fa fa-eye"></i>
+                </span>
+        </div>
+        </a>`
+    }
+    // console.log(HTML);
+    
+
+    return document.querySelector('#p_img').innerHTML = HTML;
+}
+
+
+
+
+
+
+
 // testimonials
 
 //Blog
@@ -84,6 +109,7 @@ function renderBlog( blogList ) {
         HTML += `<div class="blogas">
             <i class="fa fa-${blog.icon}"></i>
             <span class="count">${blog.count}</span>
+
             <img src="/img/blog/${blog.photo}">
             <h4 class="blog-title">${blog.title}</h4>
             <p class="text">${blog.text}<p>
