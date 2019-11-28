@@ -47,6 +47,9 @@
         }
         .blogas > p {
             display:inline-block;
+            font-size: 18px;
+            line-height: 28px;
+            color: #818181;
             text-align: left;
             margin: 25px 10px;
 
@@ -73,7 +76,7 @@
                 display:inline-block;
                 font-size: 16px;
                 color: #fff;
-                margin: 10px 10px;
+                margin: 15px 10px;
 
             }
             .blogas > .date {
