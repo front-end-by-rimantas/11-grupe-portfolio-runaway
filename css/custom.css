@@ -1,5 +1,13 @@
 /************************************************************/
 /* BASIC */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+ 
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0);
+  }
 
 /************************************************************/
 
@@ -252,7 +260,7 @@ p *{
     padding: 0px;
     }
 
-    p{
+    p.p_info{
         font-size: 18px;
         font-family: Arial, Helvetica, sans-serif;
         line-height: 1.6;
@@ -416,7 +424,7 @@ ul.about {
         font-size: 50px;
         line-height: 50px;
         padding: 18px;
-        margin: 18px 0;
+        margin: 0 18px;
         border-radius: 3px;
         width: 86px;
         background-color: var(--warning);
@@ -428,11 +436,13 @@ ul.about {
         
     }
     
+    
     .service > p {
         display: inline-block;
         width: 100%;
-        font-size: 15px;
+        font-size: 16px;
         line-height: 20px;
+        padding: 30px 20px;
     }
 
     .service_h span {	
@@ -480,9 +490,16 @@ ul.about {
                     background-color: #ffb32f;
                     position: absolute;
                 }
-                .service_h  p {
+                .service_h p {
             display: inline-block;
             width: 50%;
+            font-size: 16px;
+            line-height: 28px;
+            padding: 0px 0px 60px;
+        }
+                .service_p {
+            display: inline-block;
+            width: 60%;
             font-size: 16px;
             line-height: 28px;
             padding: 0px 0px 60px;
@@ -502,10 +519,15 @@ ul.about {
             font-size: 40px;
             line-height: 40px;
             top: 20px;
+            transition: all .4s;
             position: relative;
             font-weight: 700;
             
 
+        }
+        .service:hover> .figures_srv> strong {
+            top: 0;
+            
         }
 
 /************************************************************/

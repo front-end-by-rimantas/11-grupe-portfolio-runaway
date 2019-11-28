@@ -2,14 +2,24 @@
     display: inline-block;
 
 }
-    #p_img>  img{
+#p_img>a{
     display: inline-block;
+    text-decoration: none;
     /* float: left; */
-    width:300px;
-    font-size: 500px;
+    width: calc(90% /3);
     height: auto;
-    padding: 0 15px;
-    margin: 20px;
+    /* padding: 0 15px; */
+    margin-top: 20px;
+    margin-left: 15px;
+
+}
+    #p_img> a >img{
+    display: inline-block;
+    float: left; 
+    width: 100%;
+    height: auto;
+    /* padding: 0 15px; */
+    /* margin-top: 30px; */
   
 
     }
