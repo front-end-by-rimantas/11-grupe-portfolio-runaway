@@ -20,6 +20,9 @@ renderData( data );
 // services
 renderServices(service);
 
+// portfolio
+renderPort(gallery)
+
 // testimonials
 
 //Blog
