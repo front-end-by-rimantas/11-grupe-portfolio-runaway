@@ -79,7 +79,7 @@ span {
     .conttop  p {
         display: inline-block;
         width: 60%;
-        font-size: 16px;
+        font-size: 18px;
         line-height: 28px;
         padding: 0px 0px 60px;
         
@@ -265,15 +265,12 @@ p *{
         font-family: Arial, Helvetica, sans-serif;
         line-height: 1.6;
         color: grey;
-        margin: 0 0 30px;
     }
 
 ul.about {
-    /* display: inline-block; */
+    display: inline-block;
     float: left;
-    margin-top: 20px;
     padding-right: 30px;
-     /* margin-bottom: 30px;   */
      position: relative;
      text-align: left;
 }
@@ -381,6 +378,8 @@ ul.about {
         font-weight: 700;
         padding: 20px 0;
         color: var( --warning);
+        transition-duration: 3000ms;
+        transition-property: all;
     }
     .achievements > .number > span {
         display: inline-block;
