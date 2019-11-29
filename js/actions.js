@@ -1,7 +1,7 @@
 "use strict";
 
 // header
-renderNavmeniu(navmeniu);
+// renderNavmeniu(navmeniu);
 
 // hero
 

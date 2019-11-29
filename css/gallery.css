@@ -9,52 +9,54 @@
     display: inline-block;
     text-decoration: none;
     position: relative;
-    transition:all .6s ;
-
+    
 }
-    #p_img> a >img{
+#p_img> a >img{
     display: inline-block;
     /* float: left;  */
     width: 100%;
     height: auto;
     position: relative;
-
-    }
-    .img_filter{
-        margin: 0 20px;
-        text-decoration: none;
-    }
-    a > .picon{
-        display: block;
+    
+}
+.img_filter{
+    margin: 0 20px;
+    text-decoration: none;
+}
+a > .picon{
+    display: block;
         position:absolute;
         width: 100%;
         height: 100%;
         text-align: center;
-        top:0;
-        /* right:47%; */
-        background-color:  rgba(0, 0, 0, 0.8);
+        top: 0;
+        left: 0;
+        background-color:  rgba(0, 0, 0, 0.9);
         border: 5px solid;
         border-color:#ffb32f;
-        /* transform: translate(-50%, -50%); */
-        visibility: hidden;
+        transform: scale(0);
+        transition: all .3s ease-in-out; 
        
     }
     a > .picon> i{
         display: inline-block;
         position:absolute;
-        text-align: center;
         top:45%;
         right:47%;
         color: #fff;
         font-size: 25px !important;
-        /* bottom: 60%; */
-        /* left:50%; */
-       
+      
         
-     }
-     #p_img >a:hover > .picon {
-         visibility: visible;
+        
+    }
+    #p_img >a:hover > .picon {
+        display: inline;
+        transform: scale(1);
        
-     }
+  
+
+        
+        
+    }
      
     
