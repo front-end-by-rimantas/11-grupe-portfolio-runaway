@@ -95,58 +95,7 @@ span {
     text-align: center;
 }
  /* PLEASE, JEI TAI SERVICE DALIS PADEDAM I SERVICE */
-.service_h span {	
-    display: inline-block;	
-    margin: 0px 200px;
-    text-align: center;	
-    color: #ffb32f;	
-    margin: 0 calc(50% - 84px);
-}
-    .service_h  h2 {
-        display: inline-block;
-        width: 50%;
-        font-size: 32px;
-        line-height: 44px;
-        padding: 0px 0px 8px;
-    }
-    .service_h span {
-            display: inline-block;
-            font-size: 18px;
-            line-height: 40px;
-            text-align: center;
-            padding: 0px 50px;
-            color: #ffb32f;
-            position: relative;
-            
-        }
-        .service_h span::before{
-                content: '';
-                display: inline-block;
-                position: absolute;
-                width: 25px;
-                height: 2px;
-                top: 50%;
-                right: 0;
-                background-color: #ffb32f;
 
-            }
-            .service_h span::after {
-                content: '';
-                display: inline-block;
-                width: 25px;
-                height: 2px;
-                top: 50%;
-                left: 0;
-                background-color: #ffb32f;
-                position: absolute;
-            }
-            .service_h  p {
-        display: inline-block;
-        width: 50%;
-        font-size: 16px;
-        line-height: 28px;
-        padding: 0px 0px 60px;
-    }
     /* PLEASE, JEI TAI SERVICE DALIS PADEDAM I SERVICE */
 
         .column-left {
@@ -538,8 +487,16 @@ ul.about {
 .f_items{
     display: inline-block;
     margin: 0 15px;
+    padding: 0 20px;
     text-transform: uppercase;
     font-size:16px;
+    border-radius: 10px;
+    border: 1px;
+    background-color: rgba(192, 189, 189, 0.2);
+}
+.f_items:hover{
+    box-shadow: 2px 2px 2px 2px rgba(52, 49, 66, 0.6);
+    background-color: rgba(216, 138, 35, 0.411);
 }
 /************************************************************/
 /* TESTIMONIAL */
@@ -586,14 +543,15 @@ ul.about {
                 margin-right: 15px;
                 /* padding-right: 10px; */
             }
-                 .socials > a:hover >i {
-                    background-color: #fff;
-                    color: #ffb32f;
-                    /* border-radius: 50%; */
-                }
+                 
                 .contacts-l > .socials > a > i{
                     color: black;
                     /* padding-right: 20px; */
+                }
+                .socials > a:hover >i {
+                    /* background-color: #fff; */
+                    color: #ffb32f;
+                    /* border-radius: 50%; */
                 }
         
 /* .contacts-r > .form > input {
