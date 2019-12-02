@@ -2,7 +2,7 @@
     display: inline-block;
     position: fixed;
     width: 100%;
-    min-height: 72px;
+    max-height: 10vh;
     padding: 15px 0;  
     background-color: var( --white);
     z-index: 9;
@@ -11,29 +11,45 @@
     
 }
 .header> .row{
-    padding-left: 0;
-    width: 1180px;
-    margin-left: 19%;
-    margin-right: 20%;
-    /* position: fixed; */
+    display: inline-block;
+    position: relative;
+    
 
 }
-    nav{
+#navbar{
+    display: block;
+    margin: 0 50px;
+    position: relative;
+
+}
+.logo {
+    float: left;
+}
+nav{
     display: inline-block;
     float: right;
+    /* position: absolute; */
     /* width: 100%; */
-    }
-    .navlink {
-            display: inline-block;                  
-            padding: 0 20px;
-            float: left;
-            text-decoration: none;
-            color: #fff;
-            line-height: 32px;
-            text-transform: uppercase;
+}
+
+
+.navlink {
+    display: inline-block;                  
+    padding: 0 20px;
+    float: left;
+    color: #fff;
+    line-height: 32px;
+    text-transform: uppercase;
+    text-decoration: none;
 
 
     }
     .navlink:hover{
         color:#ffb32f;
+        left: 0%;
+        right: 0%;
+    }
+    button>i.fa-bars{
+        display: inline-block;
+        float: right;
     }
