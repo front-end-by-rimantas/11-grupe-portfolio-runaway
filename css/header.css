@@ -65,9 +65,20 @@ nav{
         
     }
 
-    button>i.fa-bars{
-        display: inline-block;
+    button>i.fa-bars::before{
+       display: inline-block;
+       vertical-align: middle;
+       font-size: 25px;
+       padding: 4px 12px;
+       background-color: #fff;
+       border-radius: 4px;
+       /* font: 13.3333px ; */
+       /* line-height: 20px; */
+        }
+        .burger{
+            /* width: 30px;     */
+            /* display: none; */
+            border: 1px;
+            /* margin: 0 10px; */
+        }
        
-        
-           
-    }
