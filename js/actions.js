@@ -1,6 +1,7 @@
 "use strict";
 
 // header
+// renderNavmeniu(navmeniu);
 
 // hero
 
@@ -9,7 +10,7 @@
 // about me
 
 // numbers
-
+renderData( data );
 // skills
 
 // latest work
@@ -17,9 +18,17 @@
 // job history
 
 // services
-renderServices( services);
+
+renderServices(service);
+
+// portfolio
+renderPort(gallery)
+
 
 // testimonials
+
+//Blog
+renderBlog(blog);
 
 // contact me
 

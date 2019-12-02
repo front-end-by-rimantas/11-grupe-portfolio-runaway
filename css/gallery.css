@@ -1,0 +1,62 @@
+#p_img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+
+}
+#p_img>a{
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    
+}
+#p_img> a >img{
+    display: inline-block;
+    /* float: left;  */
+    width: 100%;
+    height: auto;
+    position: relative;
+    
+}
+.img_filter{
+    margin: 0 20px;
+    text-decoration: none;
+}
+a > .picon{
+    display: block;
+        position:absolute;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        top: 0;
+        left: 0;
+        background-color:  rgba(0, 0, 0, 0.9);
+        border: 5px solid;
+        border-color:#ffb32f;
+        transform: scale(0);
+        transition: all .5s ease-in-out; 
+       
+    }
+    a > .picon> i{
+        display: inline-block;
+        position:absolute;
+        top:45%;
+        right:47%;
+        color: #fff;
+        font-size: 25px !important;
+      
+        
+        
+    }
+    #p_img >a:hover > .picon {
+        display: inline;
+        transform: scale(1);
+       
+  
+
+        
+        
+    }
+     
+    
