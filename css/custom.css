@@ -17,15 +17,6 @@
 /* LAYOUT */
 
 
-.header {
-    display: inline-block;
-    width: 100%;
-    background-color: var( --white);
-
-}
-
-
-
 .hero-container {
     display: inline-block;
     width: 100%;
@@ -36,14 +27,20 @@
     display: inline-block;
     width: 100%;
 }
+span {	
+    display: inline-block;	
+    margin: 0px 200px;
+    text-align: center;	
+    color: #ffb32f;	
+    margin: 0 calc(50% - 84px);
 
+}
     .conttop  h2 {
         display: inline-block;
         width: 50%;
         font-size: 32px;
         line-height: 44px;
         padding: 0px 0px 8px;
-
     }
         .conttop span {
             display: inline-block;
@@ -92,17 +89,13 @@
     padding: 80px 0px;
     text-align: center;
 }
-
  /* PLEASE, JEI TAI SERVICE DALIS PADEDAM I SERVICE */
 
     /* PLEASE, JEI TAI SERVICE DALIS PADEDAM I SERVICE */
 
-
         .column-left {
             position: relative;
             width: 100%;
-<
-
         }
 
     
@@ -123,105 +116,14 @@
 }
 p *{
     margin: 0 0 20px;
-
 }
 
 /************************************************************/
 
 /************************************************************/
-/* LIGHTOBX */
-.lightbox {
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 2;
-}
-    .lightbox.show {
-        display: inline-block;
-    }
-    .lightbox > .background {
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-        background-color: #000C;
-    }
-    .lightbox > .content {
-        display: inline-block;
-        padding: 30px;
-        background-color: #fff;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 10px;
-    }
-    
-/* VIDEO END */
-    
-.skill-container {
-    display: inline-block;
-    width: 100%;
-    background-color: var( --light);
-    padding: 80px 0px;
-    text-align: center;
-    margin: 150px 0px 150px 0px; 
-}
-
-.services-container {
-    display: inline-block;
-    width: 100%;
-    background-color: var( --white);
-    padding: 80px 0px;
-    text-align: center;
-}
-
-.portfolio-container {
-    display: inline-block;
-    width: 100%;
-    background-color: var( --light);
-    padding: 80px 0px;
-    text-align: center;
-    
-}
-
-.testimonial-container {
-    display: inline-block;
-    width: 100%;
-    background-color: var( --white);
-    padding: 80px 0px;
-    text-align: center;
-    
-}
-.blog-container {
-    display: inline-block;
-    width: 100%;
-    background-color: var( --light);
-    padding: 80px 0px;
-    text-align: center;
-    
-}
-.contact-container {
-    display: inline-block;
-    width: 100%;
-    background-color: var( --white);
-    padding: 80px 0px;
-    text-align: center;
-    
-}
-.footer-container {
-    display: inline-block;
-    width: 100%;
-    background-color: var( --light);
-    text-align: center;
-    
-}
+/* HEADER */
 
 /************************************************************/
-
-
 
 .header> .row {
     display: inline-block;
@@ -229,7 +131,6 @@ p *{
 .row> .navbar> nav> .content-menu> .navmeniu {
     display: inline-block;
     text-align: right;
-
 
     
     /* flex-direction: row; */
@@ -267,7 +168,6 @@ p *{
 }
     
 
-
 .row>.hero_content {
     display: inline-block;
     margin-top: 25%;
@@ -275,7 +175,6 @@ p *{
     /* z-index: 9; */
   
 }
-
 
 .row>.hero_content *{
     position: relative;
@@ -292,10 +191,8 @@ p *{
     padding: 10px 0;
 }
 
-
 /************************************************************/
 /* ABOUT */
-
 
 /************************************************************/
 /* PERSONAL INFO START */
@@ -395,7 +292,6 @@ ul.about {
     text-align: left;
 }
 /************************************************************/
-
 /* SKILLS END */
 
 
@@ -408,6 +304,7 @@ ul.about {
     text-align: center;
     background-color: black;
 }
+
 .achievements {
     display: inline-block;
     padding: 50px;  
@@ -444,9 +341,6 @@ ul.about {
 
 /* NUMBERS END */
 /************************************************************/
-<
-/* PORTFOLIO */
-
 /* SERVICES */
 
 /************************************************************/
@@ -582,9 +476,7 @@ ul.about {
         }
 
 /************************************************************/
-
 /* PORTFOLIO */
-
 
 /************************************************************/
 .f_items{
@@ -607,13 +499,10 @@ ul.about {
 
 /************************************************************/
 
-
-
 /************************************************************/
 /* BLOG */
 
 /************************************************************/
-
 
 /************************************************************/
 /* CONTACT START */
@@ -679,5 +568,7 @@ form input[name="email"] {
     /* CONTACT END */
 /************************************************************/
 
+/************************************************************/
+/* con.contacts */
 
 /************************************************************/

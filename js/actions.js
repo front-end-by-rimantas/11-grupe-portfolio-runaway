@@ -18,12 +18,10 @@ renderData( data );
 // job history
 
 // services
-
 renderServices(service);
 
 // portfolio
 renderPort(gallery)
-
 
 // testimonials
 
