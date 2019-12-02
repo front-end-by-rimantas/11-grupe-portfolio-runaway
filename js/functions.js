@@ -55,6 +55,7 @@ function renderServices( serviceList) {
     let HTML = '';
 
     for (let i=0; i<serviceList.length; i++) {
+
         const service = serviceList[i];
         HTML += `<div class="service col-4 col-md-6 col-lg-4 col-xs-12">
                     <div class="figures_srv"> 
@@ -90,6 +91,7 @@ let HTML = '';
 
     return document.querySelector('#p_img').innerHTML = HTML;
 }
+
 
 
 
