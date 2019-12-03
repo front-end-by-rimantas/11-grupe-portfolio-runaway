@@ -138,7 +138,7 @@ const gallery = [
 
 const testimonials = [
     {
-        photo: '../img/testimonial/A.png',
+        photo: 'A.png',
         icon: 'star', 
         title: 'Aisha Lexi',
         description: ' Dictumst integer sollicitudin venenatis ornare quam. Ligula integer luctus, blandit egestas molestie facilisi porttitor neque sodal luctus senectus lacinia euismod adipiscing element turpis dolor curae; posuere augue.',
@@ -146,7 +146,7 @@ const testimonials = [
     },
 
     {
-        photo: '../img/testimonial/G.png',
+        photo: 'G.png',
         icon: 'star', 
         title: 'Grace Ruby',
         description: ' Dictumst integer sollicitudin venenatis ornare quam. Ligula integer luctus, blandit egestas molestie facilisi porttitor neque sodal luctus senectus lacinia euismod adipiscing element turpis dolor curae; posuere augue.',
@@ -154,7 +154,7 @@ const testimonials = [
     },
 
     {
-        photo: '../img/testimonial/L.png',
+        photo: 'L.png',
         icon: 'star', 
         title: 'Lucas Noah',
         description: ' Dictumst integer sollicitudin venenatis ornare quam. Ligula integer luctus, blandit egestas molestie facilisi porttitor neque sodal luctus senectus lacinia euismod adipiscing element turpis dolor curae; posuere augue.',
@@ -162,7 +162,7 @@ const testimonials = [
     },
 
     {
-        photo: '../img/testimonial/K.png',
+        photo: 'K.png',
         icon: 'star', 
         title: 'Kiara Paige',
         description: ' Dictumst integer sollicitudin venenatis ornare quam. Ligula integer luctus, blandit egestas molestie facilisi porttitor neque sodal luctus senectus lacinia euismod adipiscing element turpis dolor curae; posuere augue.',
@@ -170,7 +170,7 @@ const testimonials = [
     },
 
     {
-        photo: '../img/testimonial/G.png',
+        photo: 'G.png',
         icon: 'star', 
         title: 'Grace Ruby',
         description: ' Dictumst integer sollicitudin venenatis ornare quam. Ligula integer luctus, blandit egestas molestie facilisi porttitor neque sodal luctus senectus lacinia euismod adipiscing element turpis dolor curae; posuere augue.',
@@ -178,7 +178,7 @@ const testimonials = [
     },
 
     {
-        photo: '../img/testimonial/L.png',
+        photo: 'L.png',
         icon: 'star', 
         title: 'Lucas Noah',
         description: ' Dictumst integer sollicitudin venenatis ornare quam. Ligula integer luctus, blandit egestas molestie facilisi porttitor neque sodal luctus senectus lacinia euismod adipiscing element turpis dolor curae; posuere augue.',
@@ -186,14 +186,14 @@ const testimonials = [
     },
 
     {
-        photo: '../img/testimonial/K.png',
+        photo: 'K.png',
         icon: 'star', 
         title: 'Kiara Paige',
         description: ' Dictumst integer sollicitudin venenatis ornare quam. Ligula integer luctus, blandit egestas molestie facilisi porttitor neque sodal luctus senectus lacinia euismod adipiscing element turpis dolor curae; posuere augue.',
         image: 'clone.png'
     },
 
-]
+];
 const testimonialBtn = [
     {
         icon: 'right',
