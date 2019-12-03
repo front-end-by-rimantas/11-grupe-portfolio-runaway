@@ -24,6 +24,7 @@ renderServices(service);
 renderPort(gallery)
 
 // testimonials
+renderPagination('#clients', renderClient, client, 2);
 
 //Blog
 renderBlog(blog);
