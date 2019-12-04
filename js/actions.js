@@ -24,6 +24,7 @@ renderServices(service);
 renderPort(gallery)
 
 // testimonials
+renderClient( testimonials);
 
 //Blog
 renderBlog(blog);

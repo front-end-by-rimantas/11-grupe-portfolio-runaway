@@ -92,12 +92,32 @@ let HTML = '';
 }
 
 
-
-
-
-
-
 // testimonials
+
+function renderClient ( testimonialsList ) {
+    let HTML = '';
+    let listHTML = '';
+    
+    for ( let i=0; i<testimonialsList.length; i++ ) {
+        const client = testimonials[i];
+
+        HTML += `<div class="client">
+                    <div class="icon">
+                        <i class="fa fa-${client.icon}"></i>
+                        <i class="fa fa-${client.icon}"></i>
+                        <i class="fa fa-${client.icon}"></i>
+                        <i class="fa fa-${client.icon}"></i>
+                    </div>
+                    <img src="./img/testimonial/${client.photo}">
+            <h4 class="title">${client.title}</h4>
+            <p class="description">${client.description}<p>
+               
+        </div>`
+    }
+    // console.log(testimonials);
+    
+    return document.querySelector('#testimonials').innerHTML = HTML;
+}
 
 //Blog
 function renderBlog( blogList ) {
