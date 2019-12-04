@@ -106,8 +106,8 @@ let HTML = '';
 
     for (let i=0; i<galleryList.length; i++) {
         const gallery = galleryList[i];
-        HTML += ` <a href="../img/portfolio/${gallery.port_img}">
-        <img src="../img/portfolio/${gallery.src}" alt="">
+        HTML += ` <a href="./img/portfolio/${gallery.port_img}">
+        <img src="./img/portfolio/${gallery.src}" alt="">
         
                 <div class="picon">
                         <i class="fa fa-eye"></i>
@@ -159,11 +159,11 @@ function renderBlog( blogList ) {
         HTML += `<div class="blogas">
             <i class="fa fa-${blog.icon}"></i>
             <span class="count">${blog.count}</span>
-            <img src="../img/blog/${blog.photo}">
+            <img src="./img/blog/${blog.photo}">
             <h4 class="blog-title">${blog.title}</h4>
             <p class="text">${blog.text}<p>
                 <div class="bottom">
-                    <img src="../img/about/${blog.face}">
+                    <img src="./img/about/${blog.face}">
                     <p class="admin">By - Rockstar Jack</p>
                 </div>
                 <div class="date">${blog.date}</div>
