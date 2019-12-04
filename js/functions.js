@@ -106,7 +106,7 @@ let HTML = '';
 
     for (let i=0; i<galleryList.length; i++) {
         const gallery = galleryList[i];
-        HTML += ` <a href="../img/portfolio/${gallery.port_img}">
+        HTML += ` <a href="./img/portfolio/${gallery.port_img}">
         <img src="../img/portfolio/${gallery.src}" alt="">
         
                 <div class="picon">

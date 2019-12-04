@@ -279,3 +279,54 @@
     .row > .m-r-xs-11 { margin-right: var(--margin-11); }
     .row > .m-r-xs-12 { margin-right: var(--margin-12); }
 }
+@media (max-width: 700px) {
+    .container > .row> .service{
+        max-width: 80%;
+        /* min-width: 50%; */
+        margin: 0 ;
+        margin-top: 20px;
+        /* padding: 10px 40px; */
+        float: none;
+      
+    }
+    .row > .col-xs-1 { width: var(--col-1); }
+    .row > .col-xs-2 { width: var(--col-2); }
+    .row > .col-xs-3 { width: var(--col-3); }
+    .row > .col-xs-4 { width: var(--col-4); }
+    .row > .col-xs-5 { width: var(--col-5); }
+    .row > .col-xs-6 { width: var(--col-6); }
+    .row > .col-xs-7 { width: var(--col-7); }
+    .row > .col-xs-8 { width: var(--col-8); }
+    .row > .col-xs-9 { width: var(--col-9); }
+    .row > .col-xs-10 { width: var(--col-10); }
+    .row > .col-xs-11 { width: var(--col-11); }
+    .row > .col-xs-12 { width: var(--col-12); }
+
+    .row > .m-l-xs-0 { margin-left: var(--margin-0); }
+    .row > .m-l-xs-1 { margin-left: var(--margin-1); }
+    .row > .m-l-xs-2 { margin-left: var(--margin-2); }
+    .row > .m-l-xs-3 { margin-left: var(--margin-3); }
+    .row > .m-l-xs-4 { margin-left: var(--margin-4); }
+    .row > .m-l-xs-5 { margin-left: var(--margin-5); }
+    .row > .m-l-xs-6 { margin-left: var(--margin-6); }
+    .row > .m-l-xs-7 { margin-left: var(--margin-7); }
+    .row > .m-l-xs-8 { margin-left: var(--margin-8); }
+    .row > .m-l-xs-9 { margin-left: var(--margin-9); }
+    .row > .m-l-xs-10 { margin-left: var(--margin-10); }
+    .row > .m-l-xs-11 { margin-left: var(--margin-11); }
+    .row > .m-l-xs-12 { margin-left: var(--margin-12); }
+
+    .row > .m-r-xs-0 { margin-right: var(--margin-0); }
+    .row > .m-r-xs-1 { margin-right: var(--margin-1); }
+    .row > .m-r-xs-2 { margin-right: var(--margin-2); }
+    .row > .m-r-xs-3 { margin-right: var(--margin-3); }
+    .row > .m-r-xs-4 { margin-right: var(--margin-4); }
+    .row > .m-r-xs-5 { margin-right: var(--margin-5); }
+    .row > .m-r-xs-6 { margin-right: var(--margin-6); }
+    .row > .m-r-xs-7 { margin-right: var(--margin-7); }
+    .row > .m-r-xs-8 { margin-right: var(--margin-8); }
+    .row > .m-r-xs-9 { margin-right: var(--margin-9); }
+    .row > .m-r-xs-10 { margin-right: var(--margin-10); }
+    .row > .m-r-xs-11 { margin-right: var(--margin-11); }
+    .row > .m-r-xs-12 { margin-right: var(--margin-12); }
+}
