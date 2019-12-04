@@ -1,8 +1,16 @@
 "use strict";
 
 // header
-// renderNavmeniu(navmeniu);
+const bars = document.querySelector('#top_header button');
+const header = document.querySelector('#top_header');
 
+bars.addEventListener('click', function(){
+    return header.classList.toggle('drop-menu');
+});
+window.addEventListener('scroll', () => {
+    headScroll();
+});
+headScroll();
 // hero
 
 // clients

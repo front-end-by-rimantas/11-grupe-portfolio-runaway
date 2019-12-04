@@ -1,19 +1,49 @@
 "use strict";
 
 // // header
-// function renderNavmeniu( navmeniuList) {
-//     let HTML = '';
+function headScroll() {
+    const headHeight = document.querySelector('#top_header').offsetHeight;
+    const height = window.scrollY + headHeight;
+//   console.log(height);
+  
+let links = [];
+const DOMlinks = document.querySelectorAll(' #navbar> nav> a');
+ for (let i=0; i<DOMlinks.length; i++) {
+     const link = DOMlinks[i];
+     const href = link.href;
+     const split = href.split('#');
 
-//     for (let i=0; i<navmeniuList.length; i++) {
-//         const navmeniu = navmeniuList[i];
-//         HTML += `<div class="navmeniu">
-//                  <a href="#" class="navlink">
-//                 ${navmeniu.title}
-//         </a>
-// </div>`;
-//     }
-//     // console.log(HTML);
-//     return document.querySelector('#navbar').innerHTML = HTML;
+     if (split.length > 1) {
+         links.push('#' + split[1] );
+     }
+    //  console.log(links);
+     
+ }
+let sectionHeights=[];
+for (let i=0; i<links.length; i++){
+    const link = links[i];
+    if (link === '#') {
+        sectionHeights.push(0);
+    } else {
+        const section = document.querySelector(link);
+        sectionHeights.push(section.offsetTop);
+    }
+}
+    let wantedSection = 0;
+    for (let i=0; i<sectionHeights.length; i++) {
+        const sectionH =sectionHeights[i];
+        if (sectionH <= height) {
+            wantedSection=[i];
+        } else{
+            break;
+        }
+    }
+    document.querySelector(`nav > a.active`).classList.remove('active');
+    document.querySelector(`nav > a[href="${links[wantedSection]}"]`).classList.add('active');
+
+
+    return;
+}
     
 
 // hero
@@ -68,7 +98,7 @@ function renderServices( serviceList) {
     // console.log(HTML);
     
 
-    return document.querySelector('#services').innerHTML = HTML;
+    return document.querySelector('#service').innerHTML = HTML;
 }
 // portfolio
 function renderPort (galleryList){

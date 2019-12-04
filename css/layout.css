@@ -29,7 +29,7 @@
 }
 
 .container,
-.header {
+.head {
     display: inline-block;
     width: 100%;
     padding: 100px 0;
@@ -39,7 +39,7 @@
         width: 1200px;
         margin: 0 calc(50% - 600px);
     }
-    .header > .row {
+    .head > .row {
         display: inline-block;
         width: 100%;
         padding: 0 20px;
