@@ -1,0 +1,57 @@
+.client{
+    display: inline-block;
+    width: 45%;
+    padding: 30px;
+    height: auto;
+    box-shadow: 2px 2px 15px 1px #818181;
+    margin: 30px;
+    position: relative;
+
+}
+    .client > .list{
+        display: inline-block;
+        width: 400%;
+        margin-bottom: 40px;
+        transition: all 1s;
+    }
+        .client > .list.no-animation{
+            transition: all 0s;
+        }
+
+         .client > img{
+            display: block;
+            /* transform: translate(0px 0px -50px 0px); */
+            bottom: 210px;
+            position:absolute;
+            /* z-index: 1; */
+            overflow: visible;
+        }
+
+       .client > .icon {
+            display: inline-;
+            color: orange;
+            position: absolute;
+            top: 50px;
+            left: 30px;    
+            margin-top: 20px;
+            margin-bottom: 20px;    
+        }
+
+.client > .title {
+    display: inline-block;
+    text-align: left;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.description {
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    font-size: 16px;
+    line-height: 30px;
+    color: grey;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    font-family: sans-serif;
+}

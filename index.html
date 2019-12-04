@@ -12,34 +12,44 @@
 
 <body>
         <!-- header start -->
-        <header class="header">
+        <header class="head" id="top_header">
                 <div class="row">
-                        <div class="col-12">
-                                <a href="#" class="logo">
-                                        <img src="img/logo/1.png" alt="logo">
-                                </a>
-                                <nav>
-                                        <div class="content-meniu" id="navbar">
-                                                <!-- <div class="navmeniu">
-                                                        <a href="#" class="navlink">
-                                                                "home"
-                                                        </a>
-                                                </div> -->
-                                        </div>
-                                </nav>
+                        <div class=" col-12">
+                                <div class="content-menu" id="navbar">
+                                        <a href="#" class="logo">
+                                                <img src="../img/logo/1.png" alt="logo">
+                                        </a>
+                                        <nav>
+
+                                                <a href="#" class="navlink active"> home </a>
+                                                <a href="#about" class="navlink">about </a>
+                                                <a href="#skill" class="navlink">skill </a>
+                                                <a href="#services" class="navlink">services </a>
+                                                <a href="#portfolio" class="navlink"> portfolio </a>
+                                                <a href="#testimonials" class="navlink">testimonial </a>
+                                                <a href="#blog" class="navlink"> blog </a>
+                                                <a href="#contact" class="navlink">contact </a>
+                                        </nav>
+                                        <button> <i class="fa fa-bars"></i></button>
+                                </div>
                         </div>
                 </div>
+
         </header>
         <!-- header end -->
 
         <!-- hero start -->
 
-        <div class="hero-container container">
+        <div class="hero-container container" id="hero">
                 <div class="hero-container container bg_image">
                         <div class="row col-md-12 col-lg-12">
                                 <div class="hero_content">
                                         <h1>I Am Austin Jackson!</h1>
-                                        <h2>I AM A DEVELOPER</h2>
+                                        <span class="hero">I AM A</span>
+                                        <span class="text-loader">
+
+                                        </span>
+
                                         <p>Libero habitasse sollicitudin aliquet venenatis iaculis placerat amet ligula,
                                                 eleifend nonummy enim in volutpat diam.</p>
                                         <button class="btn">
@@ -54,7 +64,7 @@
         <!-- hero end -->
 
         <!-- about start -->
-        <div class="about-container container">
+        <div class="about-container container" id="about">
                 <div class="row">
                         <div class="conttop">
 
@@ -69,13 +79,15 @@
 
                         </div>
                         <div class="personal-info col-md-7 col-lg-7">
-                                <p style="padding: 0px;">Ciaculis est Scelerisque sociis magna dolor pulvinar magnis.
+                                <p class="p_info" style="padding: 0px;">Ciaculis est Scelerisque sociis magna dolor
+                                        pulvinar magnis.
                                         Varius praesent suscipit. Donec morbi feugiat placerat gravida porttitor natoque
                                         nonummy parturient posuere. Magnis suspendisse parturient. Magna ultricies
                                         nostra nunc magna. Sodales etiam arcu suscipit, mollis. Aenean tempor eu ipsum
                                         nisi sociosqu lorem hymenaeos sapien. Aptent maecenas ac ante molestie habitant.
                                 </p>
-                                <p style="padding: 0px;">Duis vulputate nisi nam sem penatibus parturient volutpat justo
+                                <p class="p_info" style="padding: 0px;">Duis vulputate nisi nam sem penatibus parturient
+                                        volutpat justo
                                         phasellus. Netus. Hac montes tempor lorem tempor tincidunt vehicula velit.
                                         Tellus. Class aenean leo elit maecenas. Vehicula sagittis. Curae; eget lacus.
                                         Fames neque diam elementum risus eleifend dui tortor netus turpis.</p>
@@ -84,7 +96,7 @@
                                 <div class="row">
                                         <div class="column1 col-md-7 col-lg-7">
                                                 <ul class="about" style="list-style-type: none;">
-                                                        <li style="padding-top: 10px;">Name: Austin Jackson</li>
+                                                        <li>Name: Austin Jackson</li>
                                                         <ul class="personal-info-underline"></ul>
                                                         <li>Email: yourdomainname@gmail.com</li>
                                                         <ul class="personal-info-underline"></ul>
@@ -123,7 +135,7 @@
         <!-- about end -->
 
         <!-- skill start -->
-        <div class="skill-container container">
+        <div class="skill-container container" id="skill">
                 <div class="row">
                         <div class="conttop">
 
@@ -138,91 +150,95 @@
                                         Ullamcorper quis ornare et proin pellentesque.</p>
 
                         </div>
-   
+
                 </div>
                 <div class="row">
                         <div class="col-6 col-md-12" width=80%>
                                 <p class="title">Some talk about my professional design skill</p>
-                                <p class="skills">At mattis condimentum leo cubilia dictumst purus cubilia nisl quisque lacus ultricies proin massa fermentum 
-        placerat sociosqu ornare felis ultricies taciti mauris. Tempor mi, cum a condimentum commodo bibendum 
-                                        risus mauris natoque molestie tellus. In iaculis ad augue gravida posuere.</p>   
-                                <p class="skills">Lectus neque fames lacinia magnis primis. Dictumst torquent dictumst. Bibendum et rutrum feugiat fames 
-                                        interdum purus feugiat praesent Nunc vivamus habitant nam ultricies est. Massa amet cubilia, 
+                                <p class="skills">At mattis condimentum leo cubilia dictumst purus cubilia nisl quisque
+                                        lacus ultricies proin massa fermentum
+                                        placerat sociosqu ornare felis ultricies taciti mauris. Tempor mi, cum a
+                                        condimentum commodo bibendum
+                                        risus mauris natoque molestie tellus. In iaculis ad augue gravida posuere.</p>
+                                <p class="skills">Lectus neque fames lacinia magnis primis. Dictumst torquent dictumst.
+                                        Bibendum et rutrum feugiat fames
+                                        interdum purus feugiat praesent Nunc vivamus habitant nam ultricies est. Massa
+                                        amet cubilia,
                                         vitae nonummy nisl. Rutrum mus velit vivamus sapien est.</p>
-                        
-                        </div>               
-                         <div class="col-6 col-md-12">
-                                        <div class="progress-bar">
-                                                <div class="texts">
-                                                        <div class="label">HTML</div>
-                                                         <div class="value">90%</div>
-                                                </div>
-                                                        <div class="full">
-                                                                <div class="bar" style="width: 90%;">
-                                                                 <div class="loading"></div>
-                                                                </div>
-                                                         </div>
-                                    </div>
-                                <div class="progress-bar">
-                                                <div class="texts">
-                                                    <div class="label">CSS</div>
-                                                    <div class="value">95%</div>
-                                                </div>
-                                                         <div class="full">
-                                                                <div class="bar" style="width: 95%;">
-                                                                <div class="loading"></div>
-                                                                </div>
-                                                        </div>
-                                </div> 
-                                <div class="progress-bar">
-                                                <div class="texts">
-                                                    <div class="label">JQUERY</div>
-                                                    <div class="value">85%</div>
-                                                </div>
-                                                         <div class="full">
-                                                                <div class="bar" style="width: 85%;">
-                                                                <div class="loading"></div>
-                                                                </div>
-                                                        </div>
-                                </div> 
-                                <div class="progress-bar">
-                                                <div class="texts">
-                                                    <div class="label">PHP</div>
-                                                    <div class="value">80%</div>
-                                                </div>
-                                                         <div class="full">
-                                                                <div class="bar" style="width: 80%;">
-                                                                <div class="loading"></div>
-                                                                </div>
-                                                        </div>
-                                </div> 
-                                <div class="progress-bar">
-                                                <div class="texts">
-                                                    <div class="label">WORDPRESS</div>
-                                                    <div class="value">90%</div>
-                                                </div>
-                                                         <div class="full">
-                                                                <div class="bar" style="width: 90%;">
-                                                                <div class="loading"></div>
-                                                                </div>
-                                                        </div>
-                                </div> 
+
                         </div>
-                        
+                        <div class="col-6 col-md-12">
+                                <div class="progress-bar">
+                                        <div class="texts">
+                                                <div class="label">HTML</div>
+                                                <div class="value">90%</div>
+                                        </div>
+                                        <div class="full">
+                                                <div class="bar" style="width: 90%;">
+                                                        <div class="loading"></div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="progress-bar">
+                                        <div class="texts">
+                                                <div class="label">CSS</div>
+                                                <div class="value">95%</div>
+                                        </div>
+                                        <div class="full">
+                                                <div class="bar" style="width: 95%;">
+                                                        <div class="loading"></div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="progress-bar">
+                                        <div class="texts">
+                                                <div class="label">JQUERY</div>
+                                                <div class="value">85%</div>
+                                        </div>
+                                        <div class="full">
+                                                <div class="bar" style="width: 85%;">
+                                                        <div class="loading"></div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="progress-bar">
+                                        <div class="texts">
+                                                <div class="label">PHP</div>
+                                                <div class="value">80%</div>
+                                        </div>
+                                        <div class="full">
+                                                <div class="bar" style="width: 80%;">
+                                                        <div class="loading"></div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="progress-bar">
+                                        <div class="texts">
+                                                <div class="label">WORDPRESS</div>
+                                                <div class="value">90%</div>
+                                        </div>
+                                        <div class="full">
+                                                <div class="bar" style="width: 90%;">
+                                                        <div class="loading"></div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
                 </div>
         </div>
- <!-- skill me end -->
+        <!-- skill me end -->
         <div class="counter" id="data">
                 NUMBERS
         </div>
 
-       
+
 
         <!-- Services start -->
 
 
 
-        <div class="services-container container">
+        <div class="services-container container" id="services">
                 <div class=" row">
                         <div class="col-12 service_h">
                                 <h2>
@@ -231,11 +247,12 @@
                                 </h2>
                         </div>
 
-                        <p>Interdum a etiam sagittis vehicula porta. Massa felis eros quam blandit nulla
+                        <p class="service_p">Interdum a etiam sagittis vehicula porta. Massa felis eros quam blandit
+                                nulla
                                 dolor habitant.
                                 Ullamcorper quis ornare et proin pellentesque.</p>
                 </div>
-                <div class="row " id="services">
+                <div class="row " id="service">
                         <!-- <div class="service">
                                                 <h3> ${service.title}</h3>
                                                 <i class=" fa fa-${service.icon}"></i>
@@ -250,7 +267,7 @@
 
 
         <!-- portfolio start -->
-        <div class="portfolio-container container">
+        <div class="portfolio-container container" id="portfolio">
                 <div class="row">
                         <div class="conttop col-md-12 col-lg-12">
 
@@ -266,45 +283,36 @@
 
                         </div>
                 </div>
-                <div class="col-md-12 col-lg-12">
-                        <div class="row">
-                                <div class="work_filter">
-                                        <div class="col-md-12">
-                                                <div class="filter_items">
-                                                        <div class="f_items">all</div>
-                                                        <div class="f_items">web design</div>
-                                                        <div class="f_items">wordpress</div>
-                                                        <div class="f_items">web development</div>
-                                                        <div class="f_items">branding</div>
-                                                </div>
-                                        </div>
-                                </div>
-                                <div class="img_filter">
+                <div class="row">
 
-                                        <div class="col-md-12 col-lg-12" id="p_img">
-                                                <a href="img/portfolio/01.jpg" class="col-md-4 col-lg-4">
-                                                        <img src="img/portfolio/01.jpg" alt="">
-                                                </a>
-                                                <a href="img/portfolio/02.jpg" class="col-md-4 col-lg-4">
-                                                        <img src="img/portfolio/02.jpg" alt="">
-                                                </a>
-                                                <a href="img/portfolio/03.jpg" class="col-md-4 col-lg-4">
-                                                        <img src="img/portfolio/03.jpg" alt="">
-                                                </a>
-                                                <a href="img/portfolio/04.jpg" class="col-md-4 col-lg-4">
-                                                        <img src="img/portfolio/04.jpg" alt="">
-                                                </a>
-                                                <a href="img/portfolio/05.jpg" class="col-md-4 col-lg-4">
-                                                        <img src="img/portfolio/05.jpg" alt="">
-                                                </a>
-                                                <a href="img/portfolio/06.jpg" class="col-md-4 col-lg-4">
-                                                        <img src="img/portfolio/06.jpg" alt="">
-                                                </a>
+                        <div class="work_filter">
+                                <div class="col-md-12">
+                                        <div class="filter_items">
+                                                <div class="f_items">all</div>
+                                                <div class="f_items">web design</div>
+                                                <div class="f_items">wordpress</div>
+                                                <div class="f_items">web development</div>
+                                                <div class="f_items">branding</div>
                                         </div>
                                 </div>
                         </div>
-                </div>
 
+
+                </div>
+                <div class="row">
+                        <div class="img_filter">
+                                <div class="col-md-12 col-lg-12" id="p_img">
+                                        <!-- <a href="img/portfolio/01.jpg">
+                                                <img class="col-md-3 col-lg-3" src="img/portfolio/01.jpg" alt="">
+                                                <div class="port_overlay">
+                                                        <span>
+                                                                <i class="fa fa-eye"></i>
+                                                        </span>
+                                                </div>
+                                        </a> -->
+                                </div>
+                        </div>
+                </div>
         </div>
         </div>
 
@@ -312,7 +320,7 @@
 
         <!-- testimonial start -->
 
-        <div class="testimonial-container container">
+        <div class="testimonial-container container" id="testimonials">
                 <div class="row">
                         <div class="conttop">
 
@@ -327,12 +335,20 @@
                                         Ullamcorper quis ornare et proin pellentesque.</p>
 
                         </div>
+                        <div class="col-md-12 col-lg-12">
+                                <div class="clients" id="testimonials">
+                                        <div class="list">
+                                                <div class="list.no-animation">
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
                 </div>
         </div>
         <!-- testimonial end -->
 
         <!-- blog start -->
-        <div class="blog-container container">
+        <div class="blog-container container" id="blog">
                 <div class="row">
                         <div class="conttop">
 
@@ -346,16 +362,28 @@
                                         Ullamcorper quis ornare et proin pellentesque.</p>
 
                         </div>
+                        <div class="row">
+                                <div class="blog-list" id="blog">
+                                        BLOG
+                                </div>
+                        </div>
+                        <div class="row">
+
+                                <div class="btn-blog">
+                                        <a style="text-decoration: none; color: #fff; width: 100%; text-align: center;"
+                                                href="https://www.themetrading.net/html/runaway/template/regular/blog.html">VieW
+                                                BLOG</a>
+                                </div>
+                        </div>
                 </div>
         </div>
         <!-- blog end -->
 
 
         <!-- contact  start -->
-        <div class="contact-container container">
+        <div class="contact-container container" id="contact">
                 <div class="row">
                         <div class="conttop">
-
                                 <h2>
                                         <span>contact</span>
                                         GET IN TOUCH
@@ -366,7 +394,7 @@
                                         habitant.
                                         Ullamcorper quis ornare et proin pellentesque.</p>
                         </div>
-                        <div class="col-6 col-md-12" width=50%>
+                        <div class="col-4 col-md-12" width=50%>
                                 <div class="contacts-l">
                                         <h4>Email</h4>
                                         <p>yourdomainname@gmail.com</p>
@@ -376,38 +404,39 @@
                                         <p>Mourouba WA 6472, Australia.</p>
                                         <h4>Website</h4>
                                         <p>www.yourdomain.com</p>
-                                                <div class="socials">
-                                                        <a href="" target="_blank" >
-                                                               <i class="fa fa-facebook soc"></i>
-                                                        </a>
-                                                        <a href="" target="_blank">
-                                                                <i class="fa fa-twitter soc"></i>
-                                                        </a>
-                                                        <a href="" target="_blank" >
-                                                                <i class="fa fa-dribbble soc"></i>
-                                                        </a>
-                                                        <a href="" target="_blank">
-                                                                <i class="fa fa-linkedin soc"></i>
-                                                        </a>
-                                                        <a href="" target="_blank" >
-                                                                <i class="fa fa-instagram soc"></i>
-                                                        </a>
-                                                </div>
-                                </div> 
+                                        <div class="socials">
+                                                <a href="" target="_blank">
+                                                        <i class="fa fa-facebook s"></i>
+                                                </a>
+                                                <a href="" target="_blank">
+                                                        <i class="fa fa-twitter"></i>
+                                                </a>
+                                                <a href="" target="_blank">
+                                                        <i class="fa fa-dribbble"></i>
+                                                </a>
+                                                <a href="" target="_blank">
+                                                        <i class="fa fa-linkedin"></i>
+                                                </a>
+                                                <a href="" target="_blank">
+                                                        <i class="fa fa-instagram"></i>
+                                                </a>
+                                        </div>
+                                </div>
                         </div>
-                        <div class="col-6 col-md-12">
-                                <div class="contacts-r"></div>
+                        <div class="col-8 col-md-12">
+                                <div class="contacts-r">
                                         <form>
-                                                
+
                                                 <input type="text" name="name" placeholder=" Your Name">
                                                 <input type="email" name="email" placeholder=" Email Address">
-                                                <input type="text" name="name" placeholder=" Subject">
+                                                <input type="text" name="Name" placeholder=" Subject">
                                                 <textarea name="message" placeholder=" Message"></textarea>
-                                                <div class="btn">Send message</div>
                                         </form>
+                                        <div class="btn">Send message</div>
                                 </div>
                         </div>
                 </div>
+        </div>
         </div>
 
         </div>

@@ -1,0 +1,169 @@
+.head {
+    display: inline-block;
+    position: fixed;
+    width: 100%;
+    top:0;
+    left: 0;
+    min-height: 72px;
+    max-height: 10vh;
+    line-height: 30px;
+    padding: 15px 0;  
+    background-color: var( --white);
+    z-index: 9;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+    background-color: rgba(255,255,255,0.05);
+    transition: all 0.5s ease-in-out;
+    
+}
+.head> .row{
+    display: inline-block;
+    position: relative;
+    
+
+}
+
+#navbar{
+    display: block;
+    margin-left: 30px;
+    position: relative;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    /* font-size: 1.25rem; */
+
+}
+nav{
+    display: inline-block;
+    float: right;
+    position: relative;
+    /* position: absolute; */
+    /* width: 100%; */
+}
+.logo {
+    display: inline-block;
+    float: left;
+    left: 0;
+    position: relative;
+
+    
+}
+    .logo>img {
+        display: inline-block;
+        padding-top: 5px;
+    }
+
+
+ nav > .navlink {
+    display: inline-block;                  
+    margin: 0 15px;
+    float: left;
+    color: #fff;
+    line-height: 32px;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+ }
+ #navbar > nav> a.navlink::after {
+     display: inline-block;
+     content: '';
+     height: 1px;
+     position: absolute;
+     left: 50%;
+     right: 50%;
+     bottom: 0;
+     background-color:#ffb32f;
+     transition: all .4s;
+ }
+    
+a.navlink:hover{
+    color:#ffb32f;
+
+    }
+    #navbar > nav> a.navlink.active::after{
+        left: 0;
+        right:0;
+    }
+    #navbar>button{
+        display: none;
+        padding: 4px 14px;
+        background-color: #fff;
+        float: right;
+        font-size: 20px;
+        line-height: 30px;
+        border-radius: 4px;
+        border: none;
+        font-stretch: 100%;
+        position: absolute;
+        right: 0;
+    }
+    
+    
+    #navbar>button>i.fa-bars::before{
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.5);
+        /* transform: scale(1.8, 0.8);  */
+        margin-top: 6px;
+    }
+    .head.drop-menu {
+        display: inline-block;
+        position: fixed;
+        width: 100%;
+        top:0;
+        left: 0;
+        max-height: 60vh;
+        line-height: 25px;
+        padding: 15px 0;  
+        background-color: var( --white);
+        z-index: 9;
+        box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+        background-color: rgba(255, 255, 255, 0.8);
+        transition: all 0.5s ease-in-out;
+        
+    }
+    header.drop-menu nav > .navlink {
+        display: inline-block;  
+        width: 100%;                
+        color:  rgba(19, 12, 11, 0.411);
+        line-height: 32px;
+        text-transform: uppercase;
+        position: relative;
+        text-decoration: none;
+        transition: all 0.5s ease-in-out;
+     }
+     
+     .drop-menu nav> .navlink::after {
+        display: inline-block;
+        content: '';
+        height: 1px;
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        background-color:#ffb32f;
+        transition: all .4s;
+    }
+       
+    .drop-menu .navlink:hover{
+       color:#ffb32f;
+   
+       }
+       .drop-menu nav> .navlink.active::after{
+           left: 0;
+           right:0;
+       }
+    
+    @media (max-width: 900px){
+        nav> a.navlink{
+            display: none;
+        }
+        header.drop-menu nav> a.navlink{
+            display: inline-block;
+            transition: all 0.5s ease-in-out;
+        }
+        #navbar>button{
+            display: inline-block;
+        }
+             
+    }
