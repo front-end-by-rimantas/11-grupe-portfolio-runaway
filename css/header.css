@@ -2,7 +2,11 @@
     display: inline-block;
     position: fixed;
     width: 100%;
+    top:0;
+    left: 0;
+    min-height: 70px;
     max-height: 10vh;
+    line-height: 30px;
     padding: 15px 0;  
     background-color: var( --white);
     z-index: 9;
@@ -18,38 +22,73 @@
 }
 #navbar{
     display: block;
-    margin: 0 50px;
+    margin: 0 30px;
     position: relative;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    /* font-size: 1.25rem; */
 
 }
 .logo {
+    display: inline-block;
     float: left;
+    
 }
+    .logo>img {
+        display: inline-block;
+        padding-top: 5px;
+    }
 nav{
     display: inline-block;
     float: right;
+    position: relative;
     /* position: absolute; */
     /* width: 100%; */
 }
 
 
-.navlink {
+ nav > .navlink {
     display: inline-block;                  
-    padding: 0 20px;
+    margin: 0 15px;
     float: left;
     color: #fff;
     line-height: 32px;
     text-transform: uppercase;
+    position: relative;
     text-decoration: none;
+ }
+ nav> .navlink::after {
+     display: inline-block;
+     content: '';
+     height: 1px;
+     position: absolute;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color:#ffb32f;
+ }
+    
+.navlink:hover{
+    color:#ffb32f;
+    
+        
+    }
 
-
+    button>i.fa-bars::before{
+       display: inline-block;
+       vertical-align: middle;
+       font-size: 20px;
+       padding: 4px 12px;
+       background-color: #fff;
+       border-radius: 4px;
+       /* width: 1.5em;  */
     }
-    .navlink:hover{
-        color:#ffb32f;
-        left: 0%;
-        right: 0%;
-    }
-    button>i.fa-bars{
-        display: inline-block;
-        float: right;
-    }
+    .burger{
+        font-stretch: 100%;
+            /* width: 30px;     */
+            /* display: none; */
+            border: 1px;
+            /* margin: 0 10px; */
+        }
+     
+       
