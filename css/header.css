@@ -21,20 +21,7 @@
     
 
 }
-/* .row>.content-menu {
-    display: inline-block;
-    margin-top: 25%;
-    color: #fff;
-    z-index: 9;
-  
-}
 
-.row>.content-menu *{
-    position: relative;
-    color: #fff;
-   z-index: 3;
-  
-} */
 #navbar{
     display: block;
     margin-left: 30px;
@@ -76,7 +63,7 @@ nav{
     text-decoration: none;
     transition: all 0.5s ease-in-out;
  }
- nav> .navlink::after {
+ #navbar > nav> a.navlink::after {
      display: inline-block;
      content: '';
      height: 1px;
@@ -88,11 +75,11 @@ nav{
      transition: all .4s;
  }
     
-.navlink:hover{
+a.navlink:hover{
     color:#ffb32f;
 
     }
-    nav> .navlink:active::after{
+    #navbar > nav> a.navlink.active::after{
         left: 0;
         right:0;
     }
@@ -125,23 +112,20 @@ nav{
         width: 100%;
         top:0;
         left: 0;
-        min-height: 72px;
         max-height: 60vh;
-        line-height: 30px;
+        line-height: 25px;
         padding: 15px 0;  
         background-color: var( --white);
         z-index: 9;
         box-shadow: 0 1px 10px rgba(0,0,0,0.1);
-        background-color: rgba(255,255,255,0.05);
+        background-color: rgba(255, 255, 255, 0.8);
         transition: all 0.5s ease-in-out;
         
     }
     header.drop-menu nav > .navlink {
         display: inline-block;  
         width: 100%;                
-        /* margin: 0 15px; */
-        /* float: left; */
-        color: #fff;
+        color:  rgba(19, 12, 11, 0.411);
         line-height: 32px;
         text-transform: uppercase;
         position: relative;
