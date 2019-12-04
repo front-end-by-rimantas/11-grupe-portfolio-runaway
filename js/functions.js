@@ -96,16 +96,19 @@ let HTML = '';
 
 function renderClient ( testimonialsList ) {
     let HTML = '';
+    let listHTML = '';
     
     for ( let i=0; i<testimonialsList.length; i++ ) {
         const client = testimonials[i];
 
         HTML += `<div class="client">
-            <i class="fa fa-${client.icon}"></i>
-            <i class="fa fa-${client.icon}"></i>
-            <i class="fa fa-${client.icon}"></i>
-            <i class="fa fa-${client.icon}"></i>
-            <img src="./img/testimonial/${client.photo}">
+                    <div class="icon">
+                        <i class="fa fa-${client.icon}"></i>
+                        <i class="fa fa-${client.icon}"></i>
+                        <i class="fa fa-${client.icon}"></i>
+                        <i class="fa fa-${client.icon}"></i>
+                    </div>
+                    <img src="./img/testimonial/${client.photo}">
             <h4 class="title">${client.title}</h4>
             <p class="description">${client.description}<p>
                
