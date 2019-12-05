@@ -309,17 +309,22 @@ ul.about {
     }
     .achievements > .number {
         display: inline-block;
-        width: 100%;
+        width: 54px;
         font-size: 32px;
         line-height: 44px;
         font-weight: 700;
         padding: 20px 0;
         color: var( --warning);
-        transition-duration: 3000ms;
-        transition-property: all;
+        /* transition-duration: 3000ms;
+        transition-property: all; */
     }
-    .achievements > .number > span {
+    .achievements > span {
         display: inline-block;
+        width: inherit;
+        font-size: 25px;
+        line-height: 44px;
+        font-weight: 700;
+        padding: 20px 0px;
         margin: 0;
     }
     .achievements > .title {

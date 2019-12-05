@@ -19,6 +19,10 @@ headScroll();
 
 // numbers
 renderData( data );
+
+window.addEventListener('scroll', ()=>{
+    achievementCounter('#data');
+});
 // skills
 
 // latest work
