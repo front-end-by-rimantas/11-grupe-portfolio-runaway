@@ -309,7 +309,7 @@ ul.about {
     }
     .achievements > .number {
         display: inline-block;
-        width: 54px;
+        /* width: 54px; */
         font-size: 32px;
         line-height: 44px;
         font-weight: 700;
@@ -328,8 +328,8 @@ ul.about {
         margin: 0;
     }
     .achievements > .title {
-        display: inline-block;
-        width: 100%;
+        /* display: inline-block; */
+        width: 320px;
         color: var( --white);
         font-size: 24px;
 

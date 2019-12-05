@@ -21,6 +21,7 @@
             position: absolute;
             top: 20px;
             right: 30px;
+            z-index: 1;
         }
         .count {
             display: inline-block;
@@ -31,10 +32,24 @@
             position: absolute;
             top: 30px;
             right: 42px;
+            z-index: 2;
         }
-        .blogas > img {
+        .blogas > .blog_img {
             display:inline-block;
-            width: 100%;
+            width: 360px;
+            overflow: hidden
+            
+        }
+            .blogas  > .blog_img > img {
+                display:inline-block;
+                width: 360px;
+            }
+            .blogas > .blog_img > img:hover {
+                display:inline-block;
+                transform: scale(1.1, 1.1);
+                transition-duration: 800ms;
+                transition-property: all;
+                /* overflow: hidden; */
         }
         .blogas > h4{
             display:inline-block;
