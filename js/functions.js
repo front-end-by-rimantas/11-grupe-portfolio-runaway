@@ -163,9 +163,11 @@ let HTML = '';
         HTML += ` <a href="./img/portfolio/${gallery.port_img}">
         <img src="./img/portfolio/${gallery.src}" alt="">
         
-                <div class="picon">
-                        <i class="fa fa-eye"></i>
-                </div>
+            <div class="picon">
+                <div>
+                     <i class="fa fa-eye"></i>
+                </div> 
+            </div>
         
         </a>`
     }
