@@ -191,7 +191,7 @@ function renderClient ( testimonialsList ) {
     }
     // console.log(testimonials);
     
-    return document.querySelector('#testimonials').innerHTML = HTML;
+    return document.querySelector('#testimonial').innerHTML = HTML;
 }
 
 //Blog
@@ -215,7 +215,7 @@ function renderBlog( blogList ) {
         </div>`
     }
     
-    return document.querySelector('#blog').innerHTML = HTML;
+    return document.querySelector('#blogas').innerHTML = HTML;
 }
 // contact me
 
