@@ -9,8 +9,10 @@ bars.addEventListener('click', function(){
 });
 window.addEventListener('scroll', () => {
     headScroll();
+    headerBackground();
 });
 headScroll();
+headerBackground();
 // hero
 
 // clients
