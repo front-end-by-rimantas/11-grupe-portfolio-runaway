@@ -125,16 +125,7 @@ p *{
 
 /************************************************************/
 
-.header> .row {
-    display: inline-block;
-}
-.row> .navbar> nav> .content-menu> .navmeniu {
-    display: inline-block;
-    text-align: right;
 
-    
-    /* flex-direction: row; */
-}
 
 /* ********************************************************* */
 /* HERO  */
