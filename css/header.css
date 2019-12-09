@@ -15,34 +15,44 @@
     transition: all 0.5s ease-in-out;
     
 }
+.head-white{
+    background-color: #fff;
+}
+.head-white  nav > .navlink{
+    color:  rgba(7, 1, 1, 0.5);
+    font-weight: 600;
+    
+}
 .head> .row{
     display: inline-block;
     position: relative;
-    
+    width: 100%;
 
 }
 
 #navbar{
     display: block;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     position: relative;
     padding-top: .3125rem;
     padding-bottom: .3125rem;
     /* font-size: 1.25rem; */
 
 }
+/* @media(max-width: 1) */
 nav{
     display: inline-block;
     float: right;
     position: relative;
+    /* margin-right: 40px; */
     /* position: absolute; */
     /* width: 100%; */
 }
 .logo {
     display: inline-block;
     float: left;
-    left: 0;
-    position: relative;
+    /* left: 0;
+    position: relative; */
 
     
 }
@@ -54,10 +64,11 @@ nav{
 
  nav > .navlink {
     display: inline-block;                  
-    margin: 0 15px;
+    margin-right:  15px;
     float: left;
-    color: #fff;
-    line-height: 32px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 30px;
+    font-weight: 600;
     text-transform: uppercase;
     position: relative;
     text-decoration: none;

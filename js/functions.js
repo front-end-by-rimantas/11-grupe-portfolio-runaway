@@ -4,7 +4,7 @@
 function headScroll() {
     const headHeight = document.querySelector('#top_header').offsetHeight;
     const height = window.scrollY + headHeight;
-//   console.log(height);
+  console.log(height);
   
 let links = [];
 const DOMlinks = document.querySelectorAll(' #navbar> nav> a');
@@ -42,6 +42,15 @@ for (let i=0; i<links.length; i++){
     document.querySelector(`nav > a[href="${links[wantedSection]}"]`).classList.add('active');
 
 
+    return;
+}
+function headerBackground() {
+    if ( window.scrollY < 530 ) {
+        document.querySelector('#top_header').classList.remove('head-white');
+    } else {
+        document.querySelector('#top_header').classList.add('head-white');
+    }
+    
     return;
 }
     
@@ -154,9 +163,11 @@ let HTML = '';
         HTML += ` <a href="./img/portfolio/${gallery.port_img}">
         <img src="./img/portfolio/${gallery.src}" alt="">
         
-                <div class="picon">
-                        <i class="fa fa-eye"></i>
-                </div>
+            <div class="picon">
+                <div>
+                     <i class="fa fa-eye"></i>
+                </div> 
+            </div>
         
         </a>`
     }
@@ -178,6 +189,7 @@ function renderClient ( testimonialsList ) {
 
         HTML += `<div class="client">
                     <div class="icon">
+                        <i class="fa fa-${client.icon}"></i>
                         <i class="fa fa-${client.icon}"></i>
                         <i class="fa fa-${client.icon}"></i>
                         <i class="fa fa-${client.icon}"></i>
