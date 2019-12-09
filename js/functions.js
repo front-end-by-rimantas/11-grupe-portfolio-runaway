@@ -217,7 +217,9 @@ function renderBlog( blogList ) {
             <i class="fa fa-${blog.icon}"></i>
             <span class="count">${blog.count}</span>
             <div class="blog_img"><img src="./img/blog/${blog.photo}"></div>
+            <a href="https://www.themetrading.net/html/runaway/template/regular/blog.html">
             <h4 class="blog-title">${blog.title}</h4>
+            </a>
             <p class="text">${blog.text}<p>
                 <div class="bottom">
                     <img src="./img/about/${blog.face}">
