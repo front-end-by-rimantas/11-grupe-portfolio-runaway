@@ -51,15 +51,20 @@
                 transition-property: all;
                 /* overflow: hidden; */
         }
-        .blogas > h4{
+        .blogas > a > h4{
             display:inline-block;
             width: 340px;
             font-size: 18px;
             line-height: 25px;
             font-weight: 700;
             text-align: left;
+            text-decoration: none;
+            color: #1e283c;
             margin: 25px 10px 0px 10px;
         }
+            .blogas > a > h4:hover{
+                color: #ffb32f;
+            }
         .blogas > p {
             display:inline-block;
             font-size: 18px;
