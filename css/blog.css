@@ -21,6 +21,7 @@
             position: absolute;
             top: 20px;
             right: 30px;
+            z-index: 1;
         }
         .count {
             display: inline-block;
@@ -31,20 +32,39 @@
             position: absolute;
             top: 30px;
             right: 42px;
+            z-index: 2;
         }
-        .blogas > img {
+        .blogas > .blog_img {
             display:inline-block;
-            width: 100%;
+            width: 360px;
+            overflow: hidden
+            
         }
-        .blogas > h4{
+            .blogas  > .blog_img > img {
+                display:inline-block;
+                width: 360px;
+            }
+            .blogas > .blog_img > img:hover {
+                display:inline-block;
+                transform: scale(1.1, 1.1);
+                transition-duration: 800ms;
+                transition-property: all;
+                /* overflow: hidden; */
+        }
+        .blogas > a > h4{
             display:inline-block;
             width: 340px;
             font-size: 18px;
             line-height: 25px;
             font-weight: 700;
             text-align: left;
+            text-decoration: none;
+            color: #1e283c;
             margin: 25px 10px 0px 10px;
         }
+            .blogas > a > h4:hover{
+                color: #ffb32f;
+            }
         .blogas > p {
             display:inline-block;
             font-size: 18px;

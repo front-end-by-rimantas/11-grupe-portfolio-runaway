@@ -9,8 +9,14 @@ bars.addEventListener('click', function(){
 });
 window.addEventListener('scroll', () => {
     headScroll();
+    headerBackground();
+});
+window.addEventListener('resize', () =>{
+    headResize();
 });
 headScroll();
+headerBackground();
+headResize();
 // hero
 
 // clients
@@ -19,6 +25,10 @@ headScroll();
 
 // numbers
 renderData( data );
+
+window.addEventListener('scroll', ()=>{
+    achievementCounter('#data');
+});
 // skills
 
 // latest work

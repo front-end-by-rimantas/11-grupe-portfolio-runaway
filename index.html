@@ -5,12 +5,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Portfolio</title>
+        <title>Runaway - Personal Portfolio HTML Template</title>
+        <link rel="shortcut icon" type="image/png" href="./img/favicon.ico">
         <link rel="stylesheet" href="./css/main.css">
         <link rel="stylesheet" href="./css/custom.css">
 </head>
 
 <body>
+        <div class="theme">
+                <i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+        </div>
         <!-- header start -->
         <header class="head" id="top_header">
                 <div class="row">
@@ -50,8 +54,11 @@
 
                                         </span>
 
-                                        <p>Libero habitasse sollicitudin aliquet venenatis iaculis placerat amet ligula,
-                                                eleifend nonummy enim in volutpat diam.</p>
+                                        <div class="hero-p">
+                                                <p>Libero habitasse sollicitudin aliquet venenatis iaculis placerat amet
+                                                        ligula,
+                                                        eleifend nonummy enim in volutpat diam.</p>
+                                        </div>
                                         <button class="btn">
                                                 download cv
                                         </button>
@@ -228,7 +235,7 @@
                 </div>
         </div>
         <!-- skill me end -->
-        <div class="counter" id="data">
+        <div class="counter" id="data" data-animated_numbers=".achievements > .number">
                 NUMBERS
         </div>
 
@@ -336,11 +343,8 @@
 
                         </div>
                         <div class="col-md-12 col-lg-12">
-                                <div class="clients" id="testimonials">
-                                        <div class="list">
-                                                <div class="list.no-animation">
-                                                </div>
-                                        </div>
+                                <div class="clients col-md-12 col-lg-6 col-xs-12" id="testimonial">
+
                                 </div>
                         </div>
                 </div>
@@ -363,7 +367,7 @@
 
                         </div>
                         <div class="row">
-                                <div class="blog-list" id="blog">
+                                <div class="blog-list" id="blogas">
                                         BLOG
                                 </div>
                         </div>

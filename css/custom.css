@@ -10,6 +10,21 @@
     background: rgb(0, 0, 0);
     
   }
+  .theme{
+      display: inline-block;
+      position: fixed;
+      top: 100px;
+      right: 0;
+      padding: 10px 10px ;
+      z-index: 999;
+      background-color: var(--gray-dark);
+      
+  }
+    .theme > i {
+        color: #fff;
+        font-size: 20px;
+        line-height: 25px;
+    }
 
 /************************************************************/
 
@@ -26,6 +41,18 @@
 .conttop {
     display: inline-block;
     width: 100%;
+    animation: moveUp 0.6s ease-in-out 0.2s backwards;
+}
+
+@keyframes moveUp{
+    0% { 
+        transform: translateY(100px); 
+        opacity: 0;
+    }
+    100% { 
+        transform: translateY(0px);  
+        opacity: 1;
+    }
 }
 span {	
     display: inline-block;	
@@ -142,6 +169,7 @@ p *{
     
     background-image: url(../img/slider/03.jpg);
     background-size: cover;
+    background-position: center;
     position: relative;
     /* background: rgba(0,0,0,0.3); */
     /* padding: 0; */
@@ -153,7 +181,7 @@ p *{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: block;
     z-index: 1;
 }
@@ -181,6 +209,10 @@ p *{
     font-size: 25px;
     padding: 10px 0;
 }
+.hero-p {
+    width: 60%;
+}
+
 
 /************************************************************/
 /* ABOUT */
@@ -298,7 +330,7 @@ ul.about {
 
 .achievements {
     display: inline-block;
-    padding: 50px;  
+    padding: 40px;  
 }
 
     .achievements > i {
@@ -309,22 +341,25 @@ ul.about {
     }
     .achievements > .number {
         display: inline-block;
-        width: 100%;
+        /* width: 54px; */
         font-size: 32px;
         line-height: 44px;
         font-weight: 700;
         padding: 20px 0;
         color: var( --warning);
-        transition-duration: 3000ms;
-        transition-property: all;
     }
-    .achievements > .number > span {
+    .achievements > span {
         display: inline-block;
+        width: inherit;
+        font-size: 25px;
+        line-height: 44px;
+        font-weight: 700;
+        padding: 20px 0px;
         margin: 0;
     }
     .achievements > .title {
-        display: inline-block;
-        width: 100%;
+        /* display: inline-block; */
+        width: 320px;
         color: var( --white);
         font-size: 24px;
 

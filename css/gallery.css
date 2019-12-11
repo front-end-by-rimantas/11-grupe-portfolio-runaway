@@ -24,13 +24,13 @@
     text-decoration: none;
 }
 a > .picon{
-    display: block;
+    display: inline-block;
         position:absolute;
         width: 100%;
         height: 100%;
         text-align: center;
-        top: 0;
         left: 0;
+        /* top: 0; */   
         background-color:  rgba(0, 0, 0, 0.9);
         border: 5px solid;
         border-color:#ffb32f;
@@ -38,17 +38,28 @@ a > .picon{
         transition: all .5s ease-in-out; 
        
     }
-    a > .picon> i{
+    a > .picon> div> i{
         display: inline-block;
         position:absolute;
-        top:45%;
-        right:47%;
+        text-align: center;
+        /* padding: 40px; */
+        
         color: #fff;
         font-size: 25px !important;
-      
-        
         
     }
+
+
+    a > .picon> div{
+        display: block;
+        position:absolute;
+        top:43%;
+        right: 56%;
+        /* width: 100%;
+        height: 100%; */
+    }
+
+    
     #p_img >a:hover > .picon {
         display: inline;
         transform: scale(1);
