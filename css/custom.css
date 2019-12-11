@@ -10,6 +10,21 @@
     background: rgb(0, 0, 0);
     
   }
+  .theme{
+      display: inline-block;
+      position: fixed;
+      top: 100px;
+      right: 0;
+      padding: 10px 10px ;
+      z-index: 999;
+      background-color: var(--gray-dark);
+      
+  }
+    .theme > i {
+        color: #fff;
+        font-size: 20px;
+        line-height: 25px;
+    }
 
 /************************************************************/
 
