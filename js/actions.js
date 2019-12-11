@@ -11,8 +11,12 @@ window.addEventListener('scroll', () => {
     headScroll();
     headerBackground();
 });
+window.addEventListener('resize', () =>{
+    headResize();
+});
 headScroll();
 headerBackground();
+headResize();
 // hero
 
 // clients

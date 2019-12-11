@@ -4,7 +4,7 @@
 function headScroll() {
     const headHeight = document.querySelector('#top_header').offsetHeight;
     const height = window.scrollY + headHeight;
-  console.log(height);
+//   console.log(height);
   
 let links = [];
 const DOMlinks = document.querySelectorAll(' #navbar> nav> a');
@@ -51,6 +51,13 @@ function headerBackground() {
         document.querySelector('#top_header').classList.add('head-white');
     }
     
+    return;
+}
+function headResize() {
+    if (window.innerWidth > 900 ) {
+        document.querySelector('#top_header').classList.remove('drop-menu');
+        
+    }
     return;
 }
     
