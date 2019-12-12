@@ -69,7 +69,8 @@ nav{
     margin-right:  15px;
     float: left;
     color: rgba(255, 255, 255, 0.8);
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 34px;
     font-weight: 600;
     text-transform: uppercase;
     position: relative;
@@ -177,7 +178,37 @@ a.navlink:hover{
         }
        } */
        
-    
+ @media (max-width: 1980px){
+        .logo{
+            margin: 0 calc(50% - 800px);
+        }
+    }
+@media (max-width: 1700px){
+        .logo{
+            /* width: 100%; */
+            margin: 0 calc(50% - 600px);
+        }
+    }
+@media (max-width: 1500px){
+        .logo{
+            /* width: 100%; */
+            margin: 0 calc(50% - 600px);
+        }
+    }
+@media (max-width: 1300px){
+        .logo{
+            /* width: 100%; */
+            margin: 0 calc(50% - 500px);
+        }
+    }
+@media (max-width: 1100px){
+        .logo{
+            /* width: 100%; */
+            margin: 0 calc(50% - 430px);
+            margin-right: 0;
+        }
+    }
+
     @media (max-width: 900px){
         .logo{
             width: 100%;
