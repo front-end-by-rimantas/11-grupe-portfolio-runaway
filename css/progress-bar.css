@@ -113,6 +113,7 @@
            
         }
     }
+    
     @media(max-width: 1100px) {
         .progress-bar{
            padding-bottom: 70px ;
@@ -122,7 +123,13 @@
         }
 
     }
-  
+    @media(max-width: 900px) {
+        .progress-bar{
+           padding-bottom: 20px ;
+        }
+        
+
+    }
 @keyframes loading {
     0% {
         right: 0%;
