@@ -1,9 +1,13 @@
 
-
+.prow{
+    display: inline-block;
+    position: relative;
+}
 .progress-bar {
     display: inline-block;
     width: 100%;
-    padding-bottom: 28px;
+    padding-bottom: 40px;
+    transition-duration: .7s;
     
 
 }
@@ -57,32 +61,41 @@
             p.title{
                 display: inline-block;
                 font-size: 32px;
+                font-family: 'Poppins',sans-serif;
                 line-height: 44px;
-                font-weight: bold;
+                font-weight: 900;
                 text-align: left;
             }
             .about-skill{
                 display: inline-block;
                 padding-left: 15px;
                 padding-right: 15px;
+              
                 
             }
+           
             .pro-skill{
                 display: inline-block;
                 width: 100%;
-                float: right;
+                height: 100%;
+                position: sticky;
+                /* float: right; */
                 padding-left: 15px;
                 padding-right: 15px;
-                padding-top: 10px;
+                padding-bottom: 10px;
+                animation: moveLeft 0.6s ease-in-out 0.2s backwards
  
             }
+            
+            
             .skills {
                 display: inline-block;
                 width: 100%;
                 padding-top: 15px;
-                font-size: 16px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 18px;
                 line-height: 32px;
-                font-weight: 600;
+                font-weight: 300;
                 color: #777;
                 text-align: left;
             }
@@ -93,8 +106,20 @@
         margin-right: 0 !important; */
     }
 
-    .pro-r{
-        float: right;
+    
+    @media(max-width: 1300px) {
+        .progress-bar{
+           padding-bottom: 48px ;
+           
+        }
+    }
+    @media(max-width: 1100px) {
+        .progress-bar{
+           padding-bottom: 70px ;
+        }
+        .pro-skill{
+            padding-top: 40px;
+        }
 
     }
   
