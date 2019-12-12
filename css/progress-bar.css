@@ -1,3 +1,5 @@
+
+
 .progress-bar {
     display: inline-block;
     width: 100%;
@@ -31,12 +33,13 @@
     }
         .progress-bar > .full > .bar {
             display: inline-block;
+            float: left;
             width: 100%;
             height: 100%;
         }
             .progress-bar > .full > .bar > .loading {
                 display: inline-block;
-                width: 800px;
+                width: 100%;
                 float: right;
                 height: 100%;
                 background-color: #fff12f;
@@ -45,6 +48,18 @@
                 position: relative;
                 animation-fill-mode: forwards;
                 animation-direction: reverse;            
+            }
+            .pro{
+                padding-top: 30px;
+            }
+
+            p.title{
+                display: inline-block;
+                font-size: 30px;
+                text-align: left;
+            }
+            p.skills{
+
             }
 
 @keyframes loading {
