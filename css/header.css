@@ -51,8 +51,10 @@ nav{
 .logo {
     display: inline-block;
     float: left;
-    /* left: 0;
-    position: relative; */
+    padding-bottom: 10px;
+    margin-left: 100px;
+    margin-right: 20px;
+    
 
     
 }
@@ -98,6 +100,7 @@ a.navlink:hover{
         display: none;
         padding: 4px 14px;
         background-color: #fff;
+        opacity: 0.7;
         float: right;
         font-size: 20px;
         line-height: 30px;
@@ -142,6 +145,7 @@ a.navlink:hover{
         position: relative;
         text-decoration: none;
         transition: all 0.5s ease-in-out;
+        text-align: left;
      }
      
      .drop-menu nav> .navlink::after {
@@ -163,15 +167,33 @@ a.navlink:hover{
        .drop-menu nav> .navlink.active::after{
            left: 0;
            right:0;
+
        }
+       /* @media(min-width: 901px){
+        header.drop-menu nav> a.navlink{
+            display: none;
+            transition: all 0.5s ease-in-out;
+            
+        }
+       } */
+       
     
     @media (max-width: 900px){
+        .logo{
+            width: 100%;
+            margin-left: auto;
+            
+        }
+        nav{
+            float: left;
+        }
         nav> a.navlink{
             display: none;
         }
         header.drop-menu nav> a.navlink{
             display: inline-block;
             transition: all 0.5s ease-in-out;
+            
         }
         #navbar>button{
             display: inline-block;
