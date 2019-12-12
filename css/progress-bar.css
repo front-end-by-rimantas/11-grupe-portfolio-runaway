@@ -3,7 +3,9 @@
 .progress-bar {
     display: inline-block;
     width: 100%;
-    padding-bottom: 30px;
+    padding-bottom: 28px;
+    
+
 }
     .progress-bar > .texts {
         display: inline-block;
@@ -12,6 +14,7 @@
         color: rgb(34, 32, 32);
         font-size: 18px;
         line-height: 20px;
+        font-weight: bold;
         text-transform: uppercase;
 
     }
@@ -42,26 +45,59 @@
                 width: 100%;
                 float: right;
                 height: 100%;
-                background-color: #fff12f;
+                background-color: #ffb32f;
                 animation-name: loading;
                 animation-duration: 3s;
                 position: relative;
                 animation-fill-mode: forwards;
                 animation-direction: reverse;            
             }
-            .pro{
-                padding-top: 30px;
-            }
+           
 
             p.title{
                 display: inline-block;
-                font-size: 30px;
+                font-size: 32px;
+                line-height: 44px;
+                font-weight: bold;
                 text-align: left;
             }
-            p.skills{
-
+            .about-skill{
+                display: inline-block;
+                padding-left: 15px;
+                padding-right: 15px;
+                
             }
+            .pro-skill{
+                display: inline-block;
+                width: 100%;
+                float: right;
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-top: 10px;
+ 
+            }
+            .skills {
+                display: inline-block;
+                width: 100%;
+                padding-top: 15px;
+                font-size: 16px;
+                line-height: 32px;
+                font-weight: 600;
+                color: #777;
+                text-align: left;
+            }
+            
+    .pro{
+        display: inline-block;
+        /* margin-left: 0 !important;
+        margin-right: 0 !important; */
+    }
 
+    .pro-r{
+        float: right;
+
+    }
+  
 @keyframes loading {
     0% {
         right: 0%;

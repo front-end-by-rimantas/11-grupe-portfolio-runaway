@@ -294,7 +294,7 @@ ul.about {
 /* SKILL START */
 
 
-.title h4 {
+/* .title h4 {
     margin-bottom: 0px;
     font-size: 20px;
     line-height: 40px;
@@ -304,16 +304,8 @@ ul.about {
     margin-bottom: 8px;
     font-weight: bold;
     margin-top: -15px;
-}
-.skills {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 20px;
-    font-size: 17px;
-    line-height: 30px;
-    color: #777;
-    text-align: left;
-}
+} */
+
 /************************************************************/
 /* SKILLS END */
 
