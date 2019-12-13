@@ -213,7 +213,7 @@ a.navlink:hover{
     
     @media (max-width: 900px){
         .logo{
-            width: 100%;
+            /* width: 100%; */
             margin-left: 40px;
             
         }
