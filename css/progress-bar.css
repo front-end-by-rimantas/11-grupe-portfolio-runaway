@@ -1,7 +1,15 @@
+
+.prow{
+    display: inline-block;
+    position: relative;
+}
 .progress-bar {
     display: inline-block;
     width: 100%;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
+    transition-duration: .7s;
+    
+
 }
     .progress-bar > .texts {
         display: inline-block;
@@ -10,6 +18,7 @@
         color: rgb(34, 32, 32);
         font-size: 18px;
         line-height: 20px;
+        font-weight: bold;
         text-transform: uppercase;
 
     }
@@ -31,22 +40,96 @@
     }
         .progress-bar > .full > .bar {
             display: inline-block;
+            float: left;
             width: 100%;
             height: 100%;
         }
             .progress-bar > .full > .bar > .loading {
                 display: inline-block;
-                width: 800px;
+                width: 100%;
                 float: right;
                 height: 100%;
-                background-color: #fff12f;
+                background-color: #ffb32f;
                 animation-name: loading;
                 animation-duration: 3s;
                 position: relative;
                 animation-fill-mode: forwards;
                 animation-direction: reverse;            
             }
+           
 
+            p.title{
+                display: inline-block;
+                font-size: 32px;
+                font-family: 'Poppins',sans-serif;
+                line-height: 44px;
+                font-weight: 900;
+                text-align: left;
+            }
+            .about-skill{
+                display: inline-block;
+                padding-left: 15px;
+                padding-right: 15px;
+              
+                
+            }
+           
+            .pro-skill{
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                position: sticky;
+                /* float: right; */
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-bottom: 10px;
+                animation: moveLeft 0.6s ease-in-out 0.2s backwards
+ 
+            }
+            
+            
+            .skills {
+                display: inline-block;
+                width: 100%;
+                padding-top: 15px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 18px;
+                line-height: 32px;
+                font-weight: 300;
+                color: #777;
+                text-align: left;
+            }
+            
+    .pro{
+        display: inline-block;
+        /* margin-left: 0 !important;
+        margin-right: 0 !important; */
+    }
+
+    
+    @media(max-width: 1300px) {
+        .progress-bar{
+           padding-bottom: 48px ;
+           
+        }
+    }
+    
+    @media(max-width: 1100px) {
+        .progress-bar{
+           padding-bottom: 70px ;
+        }
+        .pro-skill{
+            padding-top: 40px;
+        }
+
+    }
+    @media(max-width: 900px) {
+        .progress-bar{
+           padding-bottom: 20px ;
+        }
+        
+
+    }
 @keyframes loading {
     0% {
         right: 0%;

@@ -82,7 +82,7 @@ function renderData( numberList ) {
     for ( let i=0; i<numberList.length; i++ ) {
         const item = numberList[i];
 
-        HTML += `<div class="achievements">
+        HTML += `<div class="achievements col-md-4 col-lg-4 col-sm-12">
             <i class="fa fa-${item.icon}"></i>
             <div class="number"
                 data-number_from="0"
