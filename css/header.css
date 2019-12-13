@@ -103,7 +103,7 @@ a.navlink:hover{
         background-color: #fff;
         opacity: 0.7;
         float: right;
-        font-size: 20px;
+        font-size: 19px;
         line-height: 30px;
         border-radius: 4px;
         border: none;
@@ -209,6 +209,8 @@ a.navlink:hover{
         }
     }
 
+    
+    
     @media (max-width: 900px){
         .logo{
             width: 100%;
