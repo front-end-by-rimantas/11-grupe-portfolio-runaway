@@ -419,8 +419,11 @@ ul.about {
     
     .service > p {
         display: inline-block;
-        /* width: 100%; */
+        width: 90%;
+        font-family: 'Open Sans',sans-serif;;
         font-size: 16px;
+        font-weight: 400;
+        color: #212529b6;
         line-height: 28px;
         padding: 30px 20px;
     }
@@ -509,6 +512,12 @@ ul.about {
             top: 0;
            
         }
+        @media (max-width: 900px){
+.container > .row#service {
+    width: 700px;
+    margin: 0 calc(50% - 350px);
+        }
+     }
 
 /************************************************************/
 /* PORTFOLIO */
