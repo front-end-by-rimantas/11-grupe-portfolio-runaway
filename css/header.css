@@ -103,7 +103,7 @@ a.navlink:hover{
         background-color: #fff;
         opacity: 0.7;
         float: right;
-        font-size: 20px;
+        font-size: 19px;
         line-height: 30px;
         border-radius: 4px;
         border: none;
@@ -209,9 +209,11 @@ a.navlink:hover{
         }
     }
 
+    
+    
     @media (max-width: 900px){
         .logo{
-            width: 100%;
+            /* width: 100%; */
             margin-left: 40px;
             
         }
@@ -229,5 +231,12 @@ a.navlink:hover{
         #navbar>button{
             display: inline-block;
         }
-             
+        
     }
+ @media (max-width: 700px){
+         .logo{
+                    /* width: 100%; */
+                    margin-left: 5px;
+                    
+          }
+ }
