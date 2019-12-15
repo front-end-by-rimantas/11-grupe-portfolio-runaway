@@ -194,7 +194,7 @@ function renderClient ( testimonialsList ) {
     for ( let i=0; i<testimonialsList.length; i++ ) {
         const client = testimonials[i];
 
-        HTML += `<div class="client">
+        HTML += `<div class="client col-md-12 col-lg-6 col-xs-12">
                     <div class="icon">
                         <i class="fa fa-${client.icon}"></i>
                         <i class="fa fa-${client.icon}"></i>
