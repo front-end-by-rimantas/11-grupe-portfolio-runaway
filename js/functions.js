@@ -229,6 +229,16 @@ function renderTestimonials (list)  {
                                                                 //  reikia sukelti i DOM'a
      document.querySelector('#testimonial').innerHTML = HTML;
 
+     const vsible = DOMtestimonials.querySelector ('.testimonial.show');
+     const index = visible.dataset.index;
+     console.log(index)
+     visible.classList.remove('show');
+     DOMtestimonials.querySelector(`.testimonial[data-index="${index+1}"]`)
+
+
+
+     return;
+
 }
 //  console.log(testimonials);
 // TESTIMONIALS end
