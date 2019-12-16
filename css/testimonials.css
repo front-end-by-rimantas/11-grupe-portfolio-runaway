@@ -10,11 +10,14 @@
     box-shadow: 2px 2px 15px 1px #818181;
     margin: 30px;
     position: relative;
-   
-    
 
 }
 
+.client >.list{
+    display: inline-block;
+    width: 400%;
+
+}
     .testimonials{
         display: inline-block;
         width: 520px;
@@ -34,7 +37,7 @@
     }
     .client > .list{
 
-
+    }    
 
          .client > img{
             display: block;
