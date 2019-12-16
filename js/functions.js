@@ -184,7 +184,52 @@ let HTML = '';
     return document.querySelector('#p_img').innerHTML = HTML;
 }
 
+// function renderTestimonials (list)  {
+//     let HTML = '';
+//     let listHTML = '';
 
+//     for ( let i=0; i<list.length; i++ ) {
+//         const testi = Math.floor(Math.random() * list.length);
+//         listHTML +=  `<div class="testimonial ${i===testi ? 'show' : ''}" data-index="${i}">
+//                             <img src="../img/testimonial/${testi.photo}">
+//                                     <h4 class="title">${testi.title}</h4>
+//                             <div class="icon">
+//                                 <i class="fa fa-star"></i>
+//                                 <i class="fa fa-star"></i>
+//                                 <i class="fa fa-star"></i>
+//                                 <i class="fa fa-star"></i>
+//                             </div>
+//                             <div class="description">${testi.description}
+//                             </div> 
+//                     </div>`;
+//     }
+
+//     HTML += `<div class="testimonials">
+//                     <div class="list">
+//                         ${listHTML}
+//                     </div>
+//                     <div class="btns">
+//                     <i class="fa fa-angle-left"></i>
+//                     <div class="circles-btn"> </div>
+//                     <i class="fa fa-angle-right"></i>
+//                 </div>
+//             </div>`;
+                
+//                                                                 //  reikia sukelti i DOM'a
+//      document.querySelector('#testimonial').innerHTML = HTML;
+
+//      const DOMtestimonials = document.querySelector(`.testimonials`)
+//      const visible = DOMtestimonials.querySelector('.testimonial.show');
+//      console.log(DOMtestimonials);
+     
+//      const index = visible.dataset.index;
+//      visible.classList.remove('show');
+
+
+
+//      return;
+
+// }
 // testimonials
 
 function renderClient ( testimonialsList ) {
