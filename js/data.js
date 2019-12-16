@@ -46,7 +46,7 @@ const data =[
     {
         icon: 'trophy',
         number: 145,
-        title: 'Porjects Done'
+        title: 'Projects Done'
     },
     {
         icon: 'smile-o',
