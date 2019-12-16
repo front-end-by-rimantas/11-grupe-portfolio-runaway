@@ -10,6 +10,33 @@
     background: rgb(0, 0, 0);
     
   }
+  .theme{
+      display: inline-block;
+      position: fixed;
+      top: 100px;
+      right: 0;
+      padding: 10px 10px ;
+      z-index: 999;
+      background-color: var(--gray-dark);
+      
+  }
+    .theme > i {
+        color: #fff;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    @keyframes moveLeft{
+        0% { 
+            transform: translateX(100px); 
+            opacity: 0;
+        }
+        100% { 
+            transform: translateX(0px);  
+            opacity: 1;
+        }
+    }
+
+    
 
 /************************************************************/
 
@@ -26,6 +53,18 @@
 .conttop {
     display: inline-block;
     width: 100%;
+    animation: moveUp 0.6s ease-in-out 0.2s backwards;
+}
+
+@keyframes moveUp{
+    0% { 
+        transform: translateY(100px); 
+        opacity: 0;
+    }
+    100% { 
+        transform: translateY(0px);  
+        opacity: 1;
+    }
 }
 span {	
     display: inline-block;	
@@ -73,11 +112,14 @@ span {
                 background-color: #ffb32f;
                 position: absolute;
             }
-    .conttop  p {
+    .conttop  p, .service_p {
         display: inline-block;
         width: 60%;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 28px;
+        font-family: 'Open Sans',sans-serif;
+        color: #212529b6;
+        font-weight: 600;
         padding: 0px 0px 60px;
         
     }
@@ -125,16 +167,7 @@ p *{
 
 /************************************************************/
 
-.header> .row {
-    display: inline-block;
-}
-.row> .navbar> nav> .content-menu> .navmeniu {
-    display: inline-block;
-    text-align: right;
 
-    
-    /* flex-direction: row; */
-}
 
 /* ********************************************************* */
 /* HERO  */
@@ -151,6 +184,7 @@ p *{
     
     background-image: url(../img/slider/03.jpg);
     background-size: cover;
+    background-position: center;
     position: relative;
     /* background: rgba(0,0,0,0.3); */
     /* padding: 0; */
@@ -162,7 +196,7 @@ p *{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: block;
     z-index: 1;
 }
@@ -190,6 +224,10 @@ p *{
     font-size: 25px;
     padding: 10px 0;
 }
+.hero-p {
+    width: 60%;
+}
+
 
 /************************************************************/
 /* ABOUT */
@@ -271,26 +309,8 @@ ul.about {
 /* SKILL START */
 
 
-.title h4 {
-    margin-bottom: 0px;
-    font-size: 20px;
-    line-height: 40px;
-    color: rgb(34, 32, 32);
-    text-align: left;
-    font-family: tahoma, Haettenschweiler, 'Arial Bold', sans-serif;
-    margin-bottom: 8px;
-    font-weight: bold;
-    margin-top: -15px;
-}
-.skills {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 20px;
-    font-size: 17px;
-    line-height: 30px;
-    color: #777;
-    text-align: left;
-}
+
+
 /************************************************************/
 /* SKILLS END */
 
@@ -299,7 +319,8 @@ ul.about {
 /* NUMBERS START*/
 
 .counter {
-    display: inline-block;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     width: 100%;
     text-align: center;
     background-color: black;
@@ -307,7 +328,8 @@ ul.about {
 
 .achievements {
     display: inline-block;
-    padding: 50px;  
+    position: relative;
+    padding: 40px 0;  
 }
 
     .achievements > i {
@@ -318,17 +340,20 @@ ul.about {
     }
     .achievements > .number {
         display: inline-block;
-        width: 100%;
+        /* width: 54px; */
         font-size: 32px;
         line-height: 44px;
         font-weight: 700;
         padding: 20px 0;
         color: var( --warning);
-        transition-duration: 3000ms;
-        transition-property: all;
     }
-    .achievements > .number > span {
+    .achievements > span {
         display: inline-block;
+        width: inherit;
+        font-size: 25px;
+        line-height: 44px;
+        font-weight: 700;
+        padding: 20px 0px;
         margin: 0;
     }
     .achievements > .title {
@@ -337,6 +362,16 @@ ul.about {
         color: var( --white);
         font-size: 24px;
 
+    }
+    @media (max-width: 700px) {
+        .counter  {
+            display: grid;
+            grid-template-columns: 1fr;
+            /* width: 100%; */
+            /* gap: 20px;/ */
+           
+        }    
+    
     }
 
 /* NUMBERS END */
@@ -384,8 +419,11 @@ ul.about {
     
     .service > p {
         display: inline-block;
-        /* width: 100%; */
+        width: 90%;
+        font-family: 'Open Sans',sans-serif;;
         font-size: 16px;
+        font-weight: 400;
+        color: #212529b6;
         line-height: 28px;
         padding: 30px 20px;
     }
@@ -474,6 +512,12 @@ ul.about {
             top: 0;
            
         }
+        @media (max-width: 900px){
+.container > .row#service {
+    width: 700px;
+    margin: 0 calc(50% - 350px);
+        }
+     }
 
 /************************************************************/
 /* PORTFOLIO */

@@ -46,7 +46,7 @@ const data =[
     {
         icon: 'trophy',
         number: 145,
-        title: 'Porjects Done'
+        title: 'Projects Done'
     },
     {
         icon: 'smile-o',
@@ -141,7 +141,7 @@ const testimonials = [
         photo: 'A.png',
         icon: 'star', 
         title: 'Aisha Lexi',
-        description: ' Dictumst integer sollicitudin venenatis ornare quam. Ligula integer luctus, blandit egestas molestie facilisi porttitor neque sodal luctus senectus lacinia euismod adipiscing element turpis dolor curae; posuere augue.',
+        description: 'Sem duis platea erat feugiat vivamus nascetur sapien tortor. Sollic dictum ultric. Aliquam inceptos bibendum fringilla sodales. Molest lacin urna per aenean commodo sociosqu.',
         image: 'clone.png'
     },
 
@@ -149,7 +149,7 @@ const testimonials = [
         photo: 'G.png',
         icon: 'star', 
         title: 'Grace Ruby',
-        description: ' Dictumst integer sollicitudin venenatis ornare quam. Ligula integer luctus, blandit egestas molestie facilisi porttitor neque sodal luctus senectus lacinia euismod adipiscing element turpis dolor curae; posuere augue.',
+        description: 'Sem duis platea erat feugiat vivamus nascetur sapien tortor. Sollic dictum ultric. Aliquam inceptos bibendum fringilla sodales. Molest lacin urna per aenean commodo sociosqu.',
         image: 'clone.png'
     },
 
@@ -157,7 +157,7 @@ const testimonials = [
         photo: 'L.png',
         icon: 'star', 
         title: 'Lucas Noah',
-        description: ' Dictumst integer sollicitudin venenatis ornare quam. Ligula integer luctus, blandit egestas molestie facilisi porttitor neque sodal luctus senectus lacinia euismod adipiscing element turpis dolor curae; posuere augue.',
+        description: 'Sem duis platea erat feugiat vivamus nascetur sapien tortor. Sollic dictum ultric. Aliquam inceptos bibendum fringilla sodales. Molest lacin urna per aenean commodo sociosqu.',
         image: 'clone.png'
     },
 
@@ -165,7 +165,7 @@ const testimonials = [
         photo: 'K.png',
         icon: 'star', 
         title: 'Kiara Paige',
-        description: ' Dictumst integer sollicitudin venenatis ornare quam. Ligula integer luctus, blandit egestas molestie facilisi porttitor neque sodal luctus senectus lacinia euismod adipiscing element turpis dolor curae; posuere augue.',
+        description: 'Sem duis platea erat feugiat vivamus nascetur sapien tortor. Sollic dictum ultric. Aliquam inceptos bibendum fringilla sodales. Molest lacin urna per aenean commodo sociosqu.',
         image: 'clone.png'
     },
 
@@ -173,7 +173,7 @@ const testimonials = [
         photo: 'G.png',
         icon: 'star', 
         title: 'Grace Ruby',
-        description: ' Dictumst integer sollicitudin venenatis ornare quam. Ligula integer luctus, blandit egestas molestie facilisi porttitor neque sodal luctus senectus lacinia euismod adipiscing element turpis dolor curae; posuere augue.',
+        description: 'Sem duis platea erat feugiat vivamus nascetur sapien tortor. Sollic dictum ultric. Aliquam inceptos bibendum fringilla sodales. Molest lacin urna per aenean commodo sociosqu.',
         image: 'clone.png'
     },
 
@@ -181,7 +181,7 @@ const testimonials = [
         photo: 'L.png',
         icon: 'star', 
         title: 'Lucas Noah',
-        description: ' Dictumst integer sollicitudin venenatis ornare quam. Ligula integer luctus, blandit egestas molestie facilisi porttitor neque sodal luctus senectus lacinia euismod adipiscing element turpis dolor curae; posuere augue.',
+        description: 'Sem duis platea erat feugiat vivamus nascetur sapien tortor. Sollic dictum ultric. Aliquam inceptos bibendum fringilla sodales. Molest lacin urna per aenean commodo sociosqu.',
         image: 'clone.png'
     },
 
@@ -189,7 +189,7 @@ const testimonials = [
         photo: 'K.png',
         icon: 'star', 
         title: 'Kiara Paige',
-        description: ' Dictumst integer sollicitudin venenatis ornare quam. Ligula integer luctus, blandit egestas molestie facilisi porttitor neque sodal luctus senectus lacinia euismod adipiscing element turpis dolor curae; posuere augue.',
+        description: 'Sem duis platea erat feugiat vivamus nascetur sapien tortor. Sollic dictum ultric. Aliquam inceptos bibendum fringilla sodales. Molest lacin urna per aenean commodo sociosqu.',
         image: 'clone.png'
     },
 

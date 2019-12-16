@@ -1,19 +1,65 @@
 "use strict";
 
 // // header
-// function renderNavmeniu( navmeniuList) {
-//     let HTML = '';
+function headScroll() {
+    const headHeight = document.querySelector('#top_header').offsetHeight;
+    const height = window.scrollY + headHeight;
+//   console.log(height);
+  
+let links = [];
+const DOMlinks = document.querySelectorAll(' #navbar> nav> a');
+ for (let i=0; i<DOMlinks.length; i++) {
+     const link = DOMlinks[i];
+     const href = link.href;
+     const split = href.split('#');
 
-//     for (let i=0; i<navmeniuList.length; i++) {
-//         const navmeniu = navmeniuList[i];
-//         HTML += `<div class="navmeniu">
-//                  <a href="#" class="navlink">
-//                 ${navmeniu.title}
-//         </a>
-// </div>`;
-//     }
-//     // console.log(HTML);
-//     return document.querySelector('#navbar').innerHTML = HTML;
+     if (split.length > 1) {
+         links.push('#' + split[1] );
+     }
+    //  console.log(links);
+     
+ }
+let sectionHeights=[];
+for (let i=0; i<links.length; i++){
+    const link = links[i];
+    if (link === '#') {
+        sectionHeights.push(0);
+    } else {
+        const section = document.querySelector(link);
+        sectionHeights.push(section.offsetTop);
+    }
+}
+    let wantedSection = 0;
+    for (let i=0; i<sectionHeights.length; i++) {
+        const sectionH =sectionHeights[i];
+        if (sectionH <= height) {
+            wantedSection=[i];
+        } else{
+            break;
+        }
+    }
+    document.querySelector(`nav > a.active`).classList.remove('active');
+    document.querySelector(`nav > a[href="${links[wantedSection]}"]`).classList.add('active');
+
+
+    return;
+}
+function headerBackground() {
+    if ( window.scrollY < 530 ) {
+        document.querySelector('#top_header').classList.remove('head-white');
+    } else {
+        document.querySelector('#top_header').classList.add('head-white');
+    }
+    
+    return;
+}
+function headResize() {
+    if (window.innerWidth > 900 ) {
+        document.querySelector('#top_header').classList.remove('drop-menu');
+        
+    }
+    return;
+}
     
 
 // hero
@@ -36,14 +82,59 @@ function renderData( numberList ) {
     for ( let i=0; i<numberList.length; i++ ) {
         const item = numberList[i];
 
-        HTML += `<div class="achievements">
+        HTML += `<div class="achievements col-md-4 col-lg-4 col-sm-12">
             <i class="fa fa-${item.icon}"></i>
-            <div class="number">${item.number}<span>+</span></div>
+            <div class="number"
+                data-number_from="0"
+                data-number_to="${item.number}"
+                data-time="3000">${item.number}</div>
+            <span>+</span>
             <h4 class="title">${item.title}</h4>
-        </div>`
+        </div>`;
+        
     }
 
     return document.querySelector('#data').innerHTML = HTML;
+}
+function achievementCounter( target ) {
+    const targetList = document.querySelector( target );
+    const counterAnimationStatus = targetList.dataset.animated_counter;
+    if ( counterAnimationStatus && counterAnimationStatus === 'true' ) {
+        return;
+    }
+    targetList.dataset.animated_counter = 'true';
+
+    const numbersToAnimate = targetList.dataset.animated_numbers;
+    if ( !numbersToAnimate || 
+         numbersToAnimate === '' ) {
+        return;
+    }
+    const animations = targetList.querySelectorAll(numbersToAnimate);
+    
+    for ( let i=0; i<animations.length; i++ ) {
+        const anime = animations[i];
+        let countFrom = anime.dataset.number_from ? parseInt(anime.dataset.number_from): 0;
+        let countTo = anime.dataset.number_to ? parseInt(anime.dataset.number_to) : 0;
+        let time = anime.dataset.time ? parseInt(anime.dataset.time) : 0;
+        const steps = 100;
+
+        const allowedTimeUntis = ['s', 'ms'];
+        let timeUnit = 'ms';
+        if ( anime.dataset.time_unit && 
+            allowedTimeUntis.indexOf(anime.dataset.time_unit) !== -1 ) {
+            timeUnit = anime.dataset.time_unit;
+        }
+
+        anime.textContent = countFrom;
+        let animationFrame = 0;
+        const timer = setInterval( () => {
+            anime.textContent = Math.round((countTo - countFrom) / steps * animationFrame);
+            animationFrame++
+            if ( animationFrame === steps + 1 ) {
+                clearInterval(timer);
+            }
+        }, time / (steps + 1));
+    }
 }
 
 // skills
@@ -68,7 +159,7 @@ function renderServices( serviceList) {
     // console.log(HTML);
     
 
-    return document.querySelector('#services').innerHTML = HTML;
+    return document.querySelector('#service').innerHTML = HTML;
 }
 // portfolio
 function renderPort (galleryList){
@@ -76,12 +167,14 @@ let HTML = '';
 
     for (let i=0; i<galleryList.length; i++) {
         const gallery = galleryList[i];
-        HTML += ` <a href="../img/portfolio/${gallery.port_img}">
-        <img src="../img/portfolio/${gallery.src}" alt="">
+        HTML += ` <a href="./img/portfolio/${gallery.port_img}">
+        <img src="./img/portfolio/${gallery.src}" alt="">
         
-                <div class="picon">
-                        <i class="fa fa-eye"></i>
-                </div>
+            <div class="picon">
+                <div>
+                     <i class="fa fa-eye"></i>
+                </div> 
+            </div>
         
         </a>`
     }
@@ -97,6 +190,7 @@ let HTML = '';
 function renderTestimonials (list)  {
     let HTML = '';
     let listHTML = '';
+
 // const defaultSelected = Math.floor( list.length /2);
 // for (let i=0; i<list.length; i++) {
 //     const testimonial = list[i];
@@ -133,7 +227,8 @@ function renderTestimonials (list)  {
             </div>`;
                 
                                                                 //  reikia sukelti i DOM'a
-     document.querySelector('#testimonials').innerHTML = HTML;
+     document.querySelector('#testimonial').innerHTML = HTML;
+
 }
 //  console.log(testimonials);
 // TESTIMONIALS end
@@ -148,16 +243,18 @@ function renderBlog( blogList ) {
         HTML += `<div class="blogas">
             <i class="fa fa-${blog.icon}"></i>
             <span class="count">${blog.count}</span>
-            <img src="../img/blog/${blog.photo}">
+            <div class="blog_img"><img src="./img/blog/${blog.photo}"></div>
+            <a href="https://www.themetrading.net/html/runaway/template/regular/blog.html">
             <h4 class="blog-title">${blog.title}</h4>
+            </a>
             <p class="text">${blog.text}<p>
                 <div class="bottom">
-                    <img src="../img/about/${blog.face}">
+                    <img src="./img/about/${blog.face}">
                     <p class="admin">By - Rockstar Jack</p>
                 </div>
                 <div class="date">${blog.date}</div>
         </div>`
     }
     
-    return document.querySelector('#blog').innerHTML = HTML;
+    return document.querySelector('#blogas').innerHTML = HTML;
 }
