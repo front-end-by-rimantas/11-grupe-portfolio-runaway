@@ -185,33 +185,53 @@ let HTML = '';
 }
 
 
-// testimonials
-
-function renderClient ( testimonialsList ) {
+// testimonials start
+                                                                 // testimonials renderinimas
+function renderTestimonials (list)  {
     let HTML = '';
     let listHTML = '';
-    
-    for ( let i=0; i<testimonialsList.length; i++ ) {
-        const client = testimonials[i];
 
-        HTML += `<div class="client col-md-12 col-lg-6 col-xs-12">
-                    <div class="icon">
-                        <i class="fa fa-${client.icon}"></i>
-                        <i class="fa fa-${client.icon}"></i>
-                        <i class="fa fa-${client.icon}"></i>
-                        <i class="fa fa-${client.icon}"></i>
-                        <i class="fa fa-${client.icon}"></i>
+// const defaultSelected = Math.floor( list.length /2);
+// for (let i=0; i<list.length; i++) {
+//     const testimonial = list[i];
+    // console.log(
+    const randomTestimonial = list[ Math.floor(Math.random() * list.length)];
+    // console.log(randomTestimonial)
+    listHTML =  `<div class="client">
+
+                        <img src="../img/testimonial/${randomTestimonial.photo}">
+                                <h4 class="title">${randomTestimonial.title}</h4>
+                        <div class="icon">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="description">${randomTestimonial.description}
+                        </div>
+                        
+                </div>`;
+
+    // for ( let i=0; i<testimonialsList.length; i++ ) {
+    //     const client = testimonials[i];
+                                                                 //    visko apjungimas
+    HTML += `<div class="testimonials">
+                    <div class="list">
+                        ${listHTML}
                     </div>
-                    <img src="./img/testimonial/${client.photo}">
-            <h4 class="title">${client.title}</h4>
-            <p class="description">${client.description}<p>
-               
-        </div>`
-    }
-    // console.log(testimonials);
-    
-    return document.querySelector('#testimonial').innerHTML = HTML;
+                    <div class="btns">
+                    <i class="fa fa-angle-left"></i>
+                    <div class="circles-btn"> </div>
+                    <i class="fa fa-angle-right"></i>
+                </div>
+            </div>`;
+                
+                                                                //  reikia sukelti i DOM'a
+     document.querySelector('#testimonial').innerHTML = HTML;
+
 }
+//  console.log(testimonials);
+// TESTIMONIALS end
 
 //Blog
 function renderBlog( blogList ) {
@@ -238,6 +258,3 @@ function renderBlog( blogList ) {
     
     return document.querySelector('#blogas').innerHTML = HTML;
 }
-// contact me
-
-// footer

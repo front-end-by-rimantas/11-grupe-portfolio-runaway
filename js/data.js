@@ -196,8 +196,8 @@ const testimonials = [
 ];
 const testimonialBtn = [
     {
-        icon: 'right',
-        icon: 'left'
+        press: 'right',
+        press: 'left'
     }
     ];
 
