@@ -220,9 +220,10 @@ function renderClient ( testimonialsList ) {
             document.querySelector('#testimonial').innerHTML = HTML;
             
             const DOMtestimonials = document.querySelector(`.testimonials`)
-            const visible = DOMtestimonials.querySelectorAll('.testimonial.show');
-
-            
+            const visible = DOMtestimonials.querySelector('.testimonial.show');
+// console.log(classList);
+let index = document.querySelector('.testimonial');
+            index.classList.add('show');
             
 
 
