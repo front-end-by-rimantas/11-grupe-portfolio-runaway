@@ -25,6 +25,18 @@
         font-size: 20px;
         line-height: 25px;
     }
+    @keyframes moveLeft{
+        0% { 
+            transform: translateX(100px); 
+            opacity: 0;
+        }
+        100% { 
+            transform: translateX(0px);  
+            opacity: 1;
+        }
+    }
+
+    
 
 /************************************************************/
 
@@ -100,11 +112,14 @@ span {
                 background-color: #ffb32f;
                 position: absolute;
             }
-    .conttop  p {
+    .conttop  p, .service_p {
         display: inline-block;
         width: 60%;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 28px;
+        font-family: 'Open Sans',sans-serif;
+        color: #212529b6;
+        font-weight: 600;
         padding: 0px 0px 60px;
         
     }
@@ -222,70 +237,51 @@ p *{
 
 .personal-info {
     display: inline-block;
-    float: left;
     text-align: left;
-    width: 50%;
-    /* margin-left: 1 calc(50% - 25px); */
-    padding: 0px;
-    }
-
-    p.p_info{
-        font-size: 18px;
-        font-family: Arial, Helvetica, sans-serif;
-        line-height: 1.6;
-        color: grey;
-    }
-
-ul.about {
+    padding: 15px;
+}
+.p_info {
     display: inline-block;
     float: left;
-    padding-right: 30px;
-     position: relative;
-     text-align: left;
+    width: 60%;
 }
-
-.about > li{
-    font-size: 22px;
-    margin-top: 20px;
-    color: grey;
-    font-size: 17px;
+.p_info > p {
+    font-size: 16px;
+    padding: 0 10px;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.personal-info-underline {
-        /* display: inline-block; */
-        width: 100%;
+    line-height: 1.6;
+    color: grey;
+    }
+    .about {
+        display: inline-block;
+        width: 50%;
+        padding: 10px;
         float: left;
-        height: 1px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        background-color: #ccc;
-        border-radius: 1px;
-        position: relative;
-}
-/* .personal-info-underline > lighter-text{
-    color: beige; */
-.column1{
-    float: left;
-     /* margin-bottom: 30px;   */
-     position: relative;
-     text-align: left; 
-}
+        
+    }
+        .about_info {
+            display: inline-block;
+            width: 100%;
+            font-size: 16px;
+            line-height: 40px;
+            color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+            border-bottom: 0.5px solid #e1e1e1;
+        }
+
   /* PERSONAL INFO END */
 
 /* ABOUT SECTION VIDEO START */
 
 .video {
     display: inline-block;
-    width: 420px;
-    height: 420px;
-    margin: auto;   
     width: 40%;
+    padding: 0 20px;
     height: auto;     
-    /* object-fit: cover; */
     }
 
    .video > img{
+       display: inline-block;
     width: 100%;
     height: auto;
    }
@@ -294,26 +290,8 @@ ul.about {
 /* SKILL START */
 
 
-.title h4 {
-    margin-bottom: 0px;
-    font-size: 20px;
-    line-height: 40px;
-    color: rgb(34, 32, 32);
-    text-align: left;
-    font-family: tahoma, Haettenschweiler, 'Arial Bold', sans-serif;
-    margin-bottom: 8px;
-    font-weight: bold;
-    margin-top: -15px;
-}
-.skills {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 20px;
-    font-size: 17px;
-    line-height: 30px;
-    color: #777;
-    text-align: left;
-}
+
+
 /************************************************************/
 /* SKILLS END */
 
@@ -322,7 +300,8 @@ ul.about {
 /* NUMBERS START*/
 
 .counter {
-    display: inline-block;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     width: 100%;
     text-align: center;
     background-color: black;
@@ -330,7 +309,8 @@ ul.about {
 
 .achievements {
     display: inline-block;
-    padding: 40px;  
+    position: relative;
+    padding: 40px 0;  
 }
 
     .achievements > i {
@@ -358,11 +338,21 @@ ul.about {
         margin: 0;
     }
     .achievements > .title {
-        /* display: inline-block; */
-        width: 320px;
+        display: inline-block;
+        width: 100%;
         color: var( --white);
         font-size: 24px;
 
+    }
+    @media (max-width: 700px) {
+        .counter  {
+            display: grid;
+            grid-template-columns: 1fr;
+            /* width: 100%; */
+            /* gap: 20px;/ */
+           
+        }    
+    
     }
 
 /* NUMBERS END */
@@ -410,8 +400,11 @@ ul.about {
     
     .service > p {
         display: inline-block;
-        /* width: 100%; */
+        width: 90%;
+        font-family: 'Open Sans',sans-serif;;
         font-size: 16px;
+        font-weight: 400;
+        color: #212529b6;
         line-height: 28px;
         padding: 30px 20px;
     }
@@ -500,6 +493,12 @@ ul.about {
             top: 0;
            
         }
+        @media (max-width: 900px){
+.container > .row#service {
+    width: 700px;
+    margin: 0 calc(50% - 350px);
+        }
+     }
 
 /************************************************************/
 /* PORTFOLIO */
