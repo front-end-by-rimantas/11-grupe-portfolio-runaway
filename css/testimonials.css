@@ -61,9 +61,9 @@
     /* margin-top: 10px; */
     font-family: sans-serif;
 }
-@media (max-width: 900px){
+/* @media (max-width: 900px){
 .container > .row {
     width: 800px;
     margin: 0 calc(50% - 400px);
 }
-}
+} */
