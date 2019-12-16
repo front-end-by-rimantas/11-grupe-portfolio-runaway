@@ -25,6 +25,18 @@
         font-size: 20px;
         line-height: 25px;
     }
+    @keyframes moveLeft{
+        0% { 
+            transform: translateX(100px); 
+            opacity: 0;
+        }
+        100% { 
+            transform: translateX(0px);  
+            opacity: 1;
+        }
+    }
+
+    
 
 /************************************************************/
 
@@ -100,11 +112,14 @@ span {
                 background-color: #ffb32f;
                 position: absolute;
             }
-    .conttop  p {
+    .conttop  p, .service_p {
         display: inline-block;
         width: 60%;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 28px;
+        font-family: 'Open Sans',sans-serif;
+        color: #212529b6;
+        font-weight: 600;
         padding: 0px 0px 60px;
         
     }
@@ -275,26 +290,8 @@ p *{
 /* SKILL START */
 
 
-.title h4 {
-    margin-bottom: 0px;
-    font-size: 20px;
-    line-height: 40px;
-    color: rgb(34, 32, 32);
-    text-align: left;
-    font-family: tahoma, Haettenschweiler, 'Arial Bold', sans-serif;
-    margin-bottom: 8px;
-    font-weight: bold;
-    margin-top: -15px;
-}
-.skills {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 20px;
-    font-size: 17px;
-    line-height: 30px;
-    color: #777;
-    text-align: left;
-}
+
+
 /************************************************************/
 /* SKILLS END */
 
@@ -303,7 +300,8 @@ p *{
 /* NUMBERS START*/
 
 .counter {
-    display: inline-block;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     width: 100%;
     text-align: center;
     background-color: black;
@@ -311,7 +309,8 @@ p *{
 
 .achievements {
     display: inline-block;
-    padding: 40px;  
+    position: relative;
+    padding: 40px 0;  
 }
 
     .achievements > i {
@@ -339,11 +338,21 @@ p *{
         margin: 0;
     }
     .achievements > .title {
-        /* display: inline-block; */
-        width: 320px;
+        display: inline-block;
+        width: 100%;
         color: var( --white);
         font-size: 24px;
 
+    }
+    @media (max-width: 700px) {
+        .counter  {
+            display: grid;
+            grid-template-columns: 1fr;
+            /* width: 100%; */
+            /* gap: 20px;/ */
+           
+        }    
+    
     }
 
 /* NUMBERS END */
@@ -391,8 +400,11 @@ p *{
     
     .service > p {
         display: inline-block;
-        /* width: 100%; */
+        width: 90%;
+        font-family: 'Open Sans',sans-serif;;
         font-size: 16px;
+        font-weight: 400;
+        color: #212529b6;
         line-height: 28px;
         padding: 30px 20px;
     }
@@ -481,6 +493,12 @@ p *{
             top: 0;
            
         }
+        @media (max-width: 900px){
+.container > .row#service {
+    width: 700px;
+    margin: 0 calc(50% - 350px);
+        }
+     }
 
 /************************************************************/
 /* PORTFOLIO */
