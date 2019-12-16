@@ -42,7 +42,8 @@ renderServices(service);
 renderPort(gallery)
 
 // testimonials
-renderClient( testimonials);
+const dataset = document.querySelectorAll('.testimonial');
+renderClient(testimonials);
 
 //Blog
 renderBlog(blog);

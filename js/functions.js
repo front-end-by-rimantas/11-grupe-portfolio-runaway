@@ -216,16 +216,14 @@ function renderClient ( testimonialsList ) {
                 </div>
             </div>`;
                 
-                                                                //  reikia sukelti i DOM'a
-     document.querySelector('#testimonial').innerHTML = HTML;
+            //  reikia sukelti i DOM'a
+            document.querySelector('#testimonial').innerHTML = HTML;
+            
+            const DOMtestimonials = document.querySelector(`.testimonials`)
+            const visible = DOMtestimonials.querySelectorAll('.testimonial.show');
 
-     const DOMtestimonials = document.querySelector(`.testimonials`)
-     const visible = DOMtestimonials.querySelector('.testimonial.show');
-    //  console.log(DOMtestimonials);
-     
-     const index = visible.dataset.index;
-     visible.classList.remove('show');
-
+            
+            
 
 
      return;

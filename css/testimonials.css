@@ -1,6 +1,7 @@
-.clients{
+.list{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(7, calc(100% /2));
+    /* width: 50%; */
 }
 .client{
     display: inline-block;
