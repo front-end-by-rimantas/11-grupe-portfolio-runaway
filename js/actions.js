@@ -42,9 +42,8 @@ renderServices(service);
 renderPort(gallery)
 
 // testimonials
-renderTestimonials( testimonials);
-// renderPagination (testimonials);
-// // console.log(testimonials)
+renderClient( testimonials);
+
 //Blog
 renderBlog(blog);
 
