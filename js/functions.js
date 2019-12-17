@@ -220,8 +220,9 @@ function renderTestimonials (list)  {
                         ${listHTML}
                     </div>
                     <div class="btns">
+                    <i class="fa fa-circle"></i>
                     <i class="fa fa-angle-left"></i>
-                    <div class="circles-btn"> </div>
+                    <i class="fa fa-circle"></i>
                     <i class="fa fa-angle-right"></i>
                 </div>
             </div>`;

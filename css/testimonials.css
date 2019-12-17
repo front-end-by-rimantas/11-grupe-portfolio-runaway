@@ -52,11 +52,10 @@
 
             display: block;
             float: left;
-
             color: orange;
             position: -webkit-sticky;
             top: 50px;
-            left: 30px;    
+            left: 130px;    
             margin-top: 10px;
             margin-bottom: 10px; 
         }
@@ -81,23 +80,23 @@
         }
 
 
-        .testimonials > .btns {
-            width: 20px;
-            height: 20px;
+        .client > .btns {
+            width: auto;
+            height: 40px;
             align-content: centre;
         }
-            .circles-btn{
+            .btns{
                 display: inline-block;
                 /* padding-right: 50px; */
-                width: 100%;
+                width: auto;
                 height: 100%;
                 background-color: orange;
                 border-radius: 50%;
                 position: relative;
 
         }
-                .circles-btn > i{
-                    
+                .btns > i{
+                    width: auto;
                 }  
                 .circles-btn > outline{
                     
@@ -105,5 +104,8 @@
                 
                 .fa{
                     color:orange;
+                    width: 40px;
+                    height: 20px;
+                    align-content: centre;
                 }
 
