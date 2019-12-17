@@ -219,17 +219,19 @@ function renderClient ( testimonialsList ) {
             //  reikia sukelti i DOM'a
             document.querySelector('#testimonial').innerHTML = HTML;
             
-            const DOMtestimonials = document.querySelector(`.testimonials`)
-            const visible = DOMtestimonials.querySelector('.testimonial.show');
-// console.log(classList);
-let index = document.querySelector('.testimonial');
-            index.classList.add('show');
+            // const DOMtestimonials = document.querySelector(`.testimonials`)
+            // const visible = DOMtestimonials.querySelector('.testimonial.show');
+            // const index = document.querySelectorAll('.testimonial');
             
-
-
-     return;
-
-}
+            // console.log(classList);
+            
+            // index.visible.classList.add('show');
+     
+            
+            
+            return;
+            
+        }
 
 
 //Blog

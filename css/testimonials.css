@@ -3,7 +3,7 @@
     grid-template-columns: repeat(7, calc(100% /2));
     /* width: 50%; */
 }
-.client{
+.testimonial{
     display: inline-block;
     /* width: 45%; */
     /* min-width: 40%; */
@@ -22,7 +22,7 @@
 } */
     
 
-         .client > img{
+         .testimonial > img{
             display: block;
             /* transform: translate(0px 0px -50px 0px); */
             bottom: 210px;
@@ -33,7 +33,7 @@
             overflow: visible;
         }
 
-       .client > .icon {
+        .testimonial > .icon {
             display: inline-block;
             color: orange;
             position: absolute;
@@ -43,7 +43,7 @@
             margin-bottom: 20px;    
         }
 
-.client > .title {
+    .testimonial > .title {
     display: inline-block;
     text-align: left;
     margin-top: 80px;
@@ -62,9 +62,3 @@
     /* margin-top: 10px; */
     font-family: sans-serif;
 }
-/* @media (max-width: 900px){
-.container > .row {
-    width: 800px;
-    margin: 0 calc(50% - 400px);
-}
-} */
